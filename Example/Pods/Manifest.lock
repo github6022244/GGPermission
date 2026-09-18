@@ -1,0 +1,16 @@
+PODS:
+  - GGPermission (0.1.0)
+
+DEPENDENCIES:
+  - GGPermission (from `../`)
+
+EXTERNAL SOURCES:
+  GGPermission:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  GGPermission: 2834c321db4382aad7f684bf73938e7a89acffad
+
+PODFILE CHECKSUM: 08f70ed9801d2b06b99a0990facce1d17d354a17
+
+COCOAPODS: 1.17.0
