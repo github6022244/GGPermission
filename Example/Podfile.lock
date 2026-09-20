@@ -1,16 +1,30 @@
 PODS:
-  - GGPermission (0.1.0)
+  - GGPermission (1.0.0):
+    - GGPermission/Core (= 1.0.0)
+    - GGWindowManager
+  - GGPermission/Core (1.0.0):
+    - GGWindowManager
+  - GGPermission/Location (1.0.0):
+    - GGPermission/Core
+    - GGWindowManager
+  - GGWindowManager (0.1.1)
 
 DEPENDENCIES:
   - GGPermission (from `../`)
+  - GGPermission/Location (from `../`)
+
+SPEC REPOS:
+  trunk:
+    - GGWindowManager
 
 EXTERNAL SOURCES:
   GGPermission:
     :path: "../"
 
 SPEC CHECKSUMS:
-  GGPermission: 2834c321db4382aad7f684bf73938e7a89acffad
+  GGPermission: 670f27d67be34901176ef82d6edea82270e28ef6
+  GGWindowManager: 8ac51a5fd7e30605ac7a2550eb3362bc9565f969
 
-PODFILE CHECKSUM: 08f70ed9801d2b06b99a0990facce1d17d354a17
+PODFILE CHECKSUM: fc3571228e0b6e78539abad5130a17f10f0b78c8
 
 COCOAPODS: 1.17.0

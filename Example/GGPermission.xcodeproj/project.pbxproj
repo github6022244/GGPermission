@@ -23,7 +23,19 @@
 		71719F9F1E33DC2100824A3D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 71719F9D1E33DC2100824A3D /* LaunchScreen.storyboard */; };
 		71A2D8287DE954FEF52C5396 /* Pods_GGPermission_Example.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 615AF2DE481FDAA6A586C0CE /* Pods_GGPermission_Example.framework */; };
 		873B8AEB1B1F5CCA007FD442 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 873B8AEA1B1F5CCA007FD442 /* Main.storyboard */; };
+		C6609C06305F8EE200909FED /* GGPermissionCoreTests.m in Sources */ = {isa = PBXBuildFile; fileRef = C6609C05305F8EE200909FED /* GGPermissionCoreTests.m */; };
 		C67F70A39E3284E5855421A4 /* Pods_GGPermission_Tests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D1E1C36775D013F64C200BDA /* Pods_GGPermission_Tests.framework */; };
+		C6B9B62E305FBBF1003197B5 /* GGPermissionBaseRequestTests.m in Sources */ = {isa = PBXBuildFile; fileRef = C6B9B62D305FBBF1003197B5 /* GGPermissionBaseRequestTests.m */; };
+		C6B9B631305FBC52003197B5 /* GGPermissionBaseHandlerTests.m in Sources */ = {isa = PBXBuildFile; fileRef = C6B9B630305FBC52003197B5 /* GGPermissionBaseHandlerTests.m */; };
+		C6B9B634305FBCFA003197B5 /* GGPermissionLocationTests.m in Sources */ = {isa = PBXBuildFile; fileRef = C6B9B633305FBCFA003197B5 /* GGPermissionLocationTests.m */; };
+		C6B9B637305FBD18003197B5 /* GGPermissionPhotoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = C6B9B636305FBD18003197B5 /* GGPermissionPhotoTests.m */; };
+		C6B9B63A305FBD44003197B5 /* GGPermissionCameraTests.m in Sources */ = {isa = PBXBuildFile; fileRef = C6B9B639305FBD44003197B5 /* GGPermissionCameraTests.m */; };
+		C6B9B63D305FBD8B003197B5 /* GGPermissionContactsTests.m in Sources */ = {isa = PBXBuildFile; fileRef = C6B9B63C305FBD8B003197B5 /* GGPermissionContactsTests.m */; };
+		C6B9B640305FC052003197B5 /* GGPermissionMicrophoneTests.m in Sources */ = {isa = PBXBuildFile; fileRef = C6B9B63F305FC052003197B5 /* GGPermissionMicrophoneTests.m */; };
+		C6B9B643305FC083003197B5 /* GGPermissionNotificationTests.m in Sources */ = {isa = PBXBuildFile; fileRef = C6B9B642305FC083003197B5 /* GGPermissionNotificationTests.m */; };
+		C6B9B646305FC0A9003197B5 /* GGPermissionCalendarTests.m in Sources */ = {isa = PBXBuildFile; fileRef = C6B9B645305FC0A9003197B5 /* GGPermissionCalendarTests.m */; };
+		C6B9B649305FC0CD003197B5 /* GGPermissionBluetoothTests.m in Sources */ = {isa = PBXBuildFile; fileRef = C6B9B648305FC0CD003197B5 /* GGPermissionBluetoothTests.m */; };
+		C6B9B64C305FC0FF003197B5 /* GGPermissionHealthTests.m in Sources */ = {isa = PBXBuildFile; fileRef = C6B9B64B305FC0FF003197B5 /* GGPermissionHealthTests.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -59,13 +71,26 @@
 		6003F5BB195388D20070C39A /* Tests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Tests.m; sourceTree = "<group>"; };
 		606FC2411953D9B200FFA9A0 /* Tests-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Tests-Prefix.pch"; sourceTree = "<group>"; };
 		615AF2DE481FDAA6A586C0CE /* Pods_GGPermission_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_GGPermission_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		6E51093A49A336B704111072 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; name = README.md; path = ../README.md; sourceTree = "<group>"; };
+		6E51093A49A336B704111072 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
 		71719F9E1E33DC2100824A3D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
-		7DF64644F81034338B9D819E /* GGPermission.podspec */ = {isa = PBXFileReference; includeInIndex = 1; name = GGPermission.podspec; path = ../GGPermission.podspec; sourceTree = "<group>"; };
+		7DF64644F81034338B9D819E /* GGPermission.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = GGPermission.podspec; path = ../GGPermission.podspec; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		873B8AEA1B1F5CCA007FD442 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = Main.storyboard; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		B31215A025EB159C89E8C96E /* Pods-GGPermission_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GGPermission_Tests.debug.xcconfig"; path = "Target Support Files/Pods-GGPermission_Tests/Pods-GGPermission_Tests.debug.xcconfig"; sourceTree = "<group>"; };
+		C6609B91305F7EF100909FED /* GGPermission_Example.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = GGPermission_Example.entitlements; sourceTree = "<group>"; };
+		C6609C05305F8EE200909FED /* GGPermissionCoreTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GGPermissionCoreTests.m; sourceTree = "<group>"; };
+		C6B9B62D305FBBF1003197B5 /* GGPermissionBaseRequestTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GGPermissionBaseRequestTests.m; sourceTree = "<group>"; };
+		C6B9B630305FBC52003197B5 /* GGPermissionBaseHandlerTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GGPermissionBaseHandlerTests.m; sourceTree = "<group>"; };
+		C6B9B633305FBCFA003197B5 /* GGPermissionLocationTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GGPermissionLocationTests.m; sourceTree = "<group>"; };
+		C6B9B636305FBD18003197B5 /* GGPermissionPhotoTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GGPermissionPhotoTests.m; sourceTree = "<group>"; };
+		C6B9B639305FBD44003197B5 /* GGPermissionCameraTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GGPermissionCameraTests.m; sourceTree = "<group>"; };
+		C6B9B63C305FBD8B003197B5 /* GGPermissionContactsTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GGPermissionContactsTests.m; sourceTree = "<group>"; };
+		C6B9B63F305FC052003197B5 /* GGPermissionMicrophoneTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GGPermissionMicrophoneTests.m; sourceTree = "<group>"; };
+		C6B9B642305FC083003197B5 /* GGPermissionNotificationTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GGPermissionNotificationTests.m; sourceTree = "<group>"; };
+		C6B9B645305FC0A9003197B5 /* GGPermissionCalendarTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GGPermissionCalendarTests.m; sourceTree = "<group>"; };
+		C6B9B648305FC0CD003197B5 /* GGPermissionBluetoothTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GGPermissionBluetoothTests.m; sourceTree = "<group>"; };
+		C6B9B64B305FC0FF003197B5 /* GGPermissionHealthTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GGPermissionHealthTests.m; sourceTree = "<group>"; };
 		D1E1C36775D013F64C200BDA /* Pods_GGPermission_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_GGPermission_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		E308F5E90AC3FDE97E068C62 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
+		E308F5E90AC3FDE97E068C62 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
 		F1493EC96C6E7A3F37905B54 /* Pods-GGPermission_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GGPermission_Tests.release.xcconfig"; path = "Target Support Files/Pods-GGPermission_Tests/Pods-GGPermission_Tests.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -98,6 +123,7 @@
 		6003F581195388D10070C39A = {
 			isa = PBXGroup;
 			children = (
+				C6609B91305F7EF100909FED /* GGPermission_Example.entitlements */,
 				60FF7A9C1954A5C5007DD14C /* Podspec Metadata */,
 				6003F593195388D20070C39A /* Example for GGPermission */,
 				6003F5B5195388D20070C39A /* Tests */,
@@ -161,6 +187,18 @@
 			children = (
 				6003F5BB195388D20070C39A /* Tests.m */,
 				6003F5B6195388D20070C39A /* Supporting Files */,
+				C6609C05305F8EE200909FED /* GGPermissionCoreTests.m */,
+				C6B9B62D305FBBF1003197B5 /* GGPermissionBaseRequestTests.m */,
+				C6B9B630305FBC52003197B5 /* GGPermissionBaseHandlerTests.m */,
+				C6B9B633305FBCFA003197B5 /* GGPermissionLocationTests.m */,
+				C6B9B636305FBD18003197B5 /* GGPermissionPhotoTests.m */,
+				C6B9B639305FBD44003197B5 /* GGPermissionCameraTests.m */,
+				C6B9B63C305FBD8B003197B5 /* GGPermissionContactsTests.m */,
+				C6B9B63F305FC052003197B5 /* GGPermissionMicrophoneTests.m */,
+				C6B9B642305FC083003197B5 /* GGPermissionNotificationTests.m */,
+				C6B9B645305FC0A9003197B5 /* GGPermissionCalendarTests.m */,
+				C6B9B648305FC0CD003197B5 /* GGPermissionBluetoothTests.m */,
+				C6B9B64B305FC0FF003197B5 /* GGPermissionHealthTests.m */,
 			);
 			path = Tests;
 			sourceTree = "<group>";
@@ -193,7 +231,6 @@
 				B31215A025EB159C89E8C96E /* Pods-GGPermission_Tests.debug.xcconfig */,
 				F1493EC96C6E7A3F37905B54 /* Pods-GGPermission_Tests.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -248,7 +285,11 @@
 				LastUpgradeCheck = 0720;
 				ORGANIZATIONNAME = github6022244;
 				TargetAttributes = {
+					6003F589195388D20070C39A = {
+						DevelopmentTeam = T2F27PSC94;
+					};
 					6003F5AD195388D20070C39A = {
+						DevelopmentTeam = T2F27PSC94;
 						TestTargetID = 6003F589195388D20070C39A;
 					};
 				};
@@ -258,6 +299,7 @@
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
 			knownRegions = (
+				English,
 				en,
 				Base,
 			);
@@ -347,10 +389,12 @@
 			inputPaths = (
 				"${PODS_ROOT}/Target Support Files/Pods-GGPermission_Example/Pods-GGPermission_Example-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/GGPermission/GGPermission.framework",
+				"${BUILT_PRODUCTS_DIR}/GGWindowManager/GGWindowManager.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GGPermission.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GGWindowManager.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -374,7 +418,19 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C6B9B631305FBC52003197B5 /* GGPermissionBaseHandlerTests.m in Sources */,
+				C6B9B637305FBD18003197B5 /* GGPermissionPhotoTests.m in Sources */,
+				C6B9B64C305FC0FF003197B5 /* GGPermissionHealthTests.m in Sources */,
 				6003F5BC195388D20070C39A /* Tests.m in Sources */,
+				C6B9B649305FC0CD003197B5 /* GGPermissionBluetoothTests.m in Sources */,
+				C6B9B640305FC052003197B5 /* GGPermissionMicrophoneTests.m in Sources */,
+				C6B9B62E305FBBF1003197B5 /* GGPermissionBaseRequestTests.m in Sources */,
+				C6B9B634305FBCFA003197B5 /* GGPermissionLocationTests.m in Sources */,
+				C6609C06305F8EE200909FED /* GGPermissionCoreTests.m in Sources */,
+				C6B9B643305FC083003197B5 /* GGPermissionNotificationTests.m in Sources */,
+				C6B9B63A305FBD44003197B5 /* GGPermissionCameraTests.m in Sources */,
+				C6B9B63D305FBD8B003197B5 /* GGPermissionContactsTests.m in Sources */,
+				C6B9B646305FC0A9003197B5 /* GGPermissionCalendarTests.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -494,9 +550,12 @@
 			baseConfigurationReference = 208C66771C25595D99F22963 /* Pods-GGPermission_Example.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = GGPermission_Example.entitlements;
+				DEVELOPMENT_TEAM = T2F27PSC94;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "GGPermission/GGPermission-Prefix.pch";
 				INFOPLIST_FILE = "GGPermission/GGPermission-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				MODULE_NAME = ExampleApp;
 				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.demo.${PRODUCT_NAME:rfc1034identifier}";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -510,9 +569,12 @@
 			baseConfigurationReference = 0AE4CA64E6CD2792AEA79C88 /* Pods-GGPermission_Example.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = GGPermission_Example.entitlements;
+				DEVELOPMENT_TEAM = T2F27PSC94;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "GGPermission/GGPermission-Prefix.pch";
 				INFOPLIST_FILE = "GGPermission/GGPermission-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				MODULE_NAME = ExampleApp;
 				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.demo.${PRODUCT_NAME:rfc1034identifier}";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -526,6 +588,7 @@
 			baseConfigurationReference = B31215A025EB159C89E8C96E /* Pods-GGPermission_Tests.debug.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
+				DEVELOPMENT_TEAM = T2F27PSC94;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(PLATFORM_DIR)/Developer/Library/Frameworks",
 					"$(inherited)",
@@ -551,6 +614,7 @@
 			baseConfigurationReference = F1493EC96C6E7A3F37905B54 /* Pods-GGPermission_Tests.release.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
+				DEVELOPMENT_TEAM = T2F27PSC94;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(PLATFORM_DIR)/Developer/Library/Frameworks",
 					"$(inherited)",

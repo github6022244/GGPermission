@@ -6,7 +6,7 @@
 //  Copyright (c) 2026 github6022244. All rights reserved.
 //
 
-@import UIKit;
+#import <UIKit/UIKit.h>
 
 @interface GGViewController : UIViewController
 
