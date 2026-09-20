@@ -45,34 +45,17 @@ static GGPermission *_instance;
     if (self = [super init]) {
         _autoTipEnable = YES;
 
-        // 相机
         _cameraPushSettingTips = @"相机权限未开启，是否前往设置";
-
-        // 相册
         _photoPushSettingTips = @"相册权限未开启，是否前往设置";
         _photoAddOnlyPushSettingTips = @"相册写入权限未开启，是否前往设置";
-
-        // 定位
         _locationWhenPushSettingTips = @"位置权限未开启，是否前往设置";
         _locationAlwaysPushSettingTips = @"始终允许位置权限未开启，是否前往设置";
-
-        // 麦克风
         _microphonePushSettingTips = @"麦克风权限未开启，是否前往设置";
-
-        // 通讯录
         _contactsPushSettingTips = @"通讯录权限未开启，是否前往设置";
-
-        // 通知
         _notificationPushSettingTips = @"通知权限未开启，是否前往设置";
-
-        // 日历
         _calendarPushSettingTips = @"日历权限未开启，是否前往设置";
         _calendarWriteOnlyPushSettingTips = @"日历写入权限未开启，是否前往设置";
-
-        // 蓝牙
         _bluetoothPushSettingTips = @"蓝牙权限未开启，是否前往设置";
-
-        // 健康（细分）
         _healthPushSettingTips = @"健康权限未开启，是否前往设置";
         _healthStepsPushSettingTips = @"步数权限未开启，是否前往设置";
         _healthHeartRatePushSettingTips = @"心率权限未开启，是否前往设置";
@@ -112,12 +95,15 @@ static GGPermission *_instance;
                                              BOOL *stop) {
         Class cls = NSClassFromString(clsName);
         if (!cls) {
-            GGPermissionLogInfo(@"👉 %@ 类不存在，跳过注册", clsName);
+            GGPermissionLogInfo(@"%@ 类不存在，跳过注册", clsName);
             return;
         }
-        id handler = [[cls alloc] init];
-        if (![handler conformsToProtocol:@protocol(GGPermissionHandlerProtocol)]) return;
         for (NSNumber *t in types) {
+            id handler = [[cls alloc] init];
+            if (![handler conformsToProtocol:@protocol(GGPermissionHandlerProtocol)]) {
+                GGPermissionLogInfo(@"%@ 对象未遵循 Handler 协议，跳过注册", clsName);
+                continue;
+            }
             self.handlerMap[t] = handler;
         }
     }];
@@ -125,17 +111,24 @@ static GGPermission *_instance;
 
 #pragma mark - Public
 - (void)permissonType:(GGPermissionType)type withHandle:(GGPermissionCallback)callback {
+    // 主线程保护
+    if (![NSThread isMainThread]) {
+        dispatch_async(dispatch_get_main_queue(), ^{
+            [self permissonType:type withHandle:callback];
+        });
+        return;
+    }
+
     if (self.block && self.block != callback) {
-        GGPermissionLogWarning(@"⚠️ GGPermission：丢弃未完成的旧权限请求");
+        GGPermissionLogWarning(@"丢弃未完成的旧权限请求");
         self.block = nil;
     }
     self.block = callback;
     self.isCallbackExecuted = NO;
 
     id<GGPermissionHandlerProtocol> handler = self.handlerMap[@(type)];
-
     if (!handler) {
-        GGPermissionLogError(@"⚠️ GGPermission：未引入 %ld 对应的 subspec，请在 Podfile 中添加", (long)type);
+        GGPermissionLogError(@"未引入 %ld 对应的 subspec，请在 Podfile 中添加", (long)type);
         [self executeBlock:NO statusCode:@(GGPermissionErrorUnknown)];
         return;
     }
@@ -151,7 +144,7 @@ static GGPermission *_instance;
 #pragma mark - 统一回调
 - (void)executeBlock:(BOOL)granted statusCode:(NSNumber *)statusCode {
     if (self.isCallbackExecuted) {
-        GGPermissionLogWarning(@"⚠️ GGPermission: 重复回调被忽略");
+        GGPermissionLogWarning(@"重复回调被忽略");
         return;
     }
     self.isCallbackExecuted = YES;
