@@ -1,6 +1,6 @@
 //
 //  GGPermissionBaseRequest.m
-//  GGPermission_Example
+//  GGPermission
 //
 //  Created by GG on 2026/9/18.
 //  Copyright © 2026 github6022244. All rights reserved.
@@ -33,6 +33,7 @@
 }
 
 #pragma mark - 子类调用：重置状态
+
 - (void)prepareForNewRequest {
     _cancelled = NO;
     _isCallbackExecuted = NO;
@@ -41,21 +42,29 @@
 }
 
 #pragma mark - 子类必须重写
+
 - (void)startRequest:(GGPermissionType)type callback:(GGPermissionCallback)callback {
     NSAssert(NO, @"子类必须重写 startRequest:callback:");
 }
 
 #pragma mark - Public
+
 - (void)cancel {
-    if (self.cancelled) return;
+    if (self.cancelled || self.isCallbackExecuted) { return; }
     self.cancelled = YES;
 
     [self cancelTimeoutBlock];
     [self onCancel];
+
+    // 取消也要回调，保证调用方状态机不悬挂
+    GGPermissionCallback cb = self.callback;
     self.callback = nil;
+    self.isCallbackExecuted = YES;
+    if (cb) cb(NO, @(GGPermissionErrorCancelled));
 }
 
 #pragma mark - 超时
+
 - (NSTimeInterval)timeoutInterval {
     return 15.0;
 }
@@ -96,6 +105,7 @@
 }
 
 #pragma mark - 回调统一出口
+
 - (void)executeCallback:(BOOL)granted statusCode:(NSNumber *)statusCode {
     if (self.cancelled) return;
     if (self.isCallbackExecuted) return;
@@ -110,7 +120,8 @@
     if (cb) cb(granted, statusCode);
 }
 
-#pragma mark - 子类可重写，默认空实现
+#pragma mark - 子类可重写
+
 - (void)onCancel {}
 - (NSNumber *)currentSystemStatus { return nil; }
 

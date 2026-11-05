@@ -13,7 +13,7 @@
 
 @implementation GGPermissionBaseHandler
 
-#pragma mark - 子类必须重写（默认实现触发断言）
+#pragma mark - 子类必须重写
 
 - (GGPermissionBaseRequest *)createRequest {
     NSAssert(NO, @"子类必须重写 createRequest");
@@ -39,10 +39,41 @@
     return @"";
 }
 
-#pragma mark - 默认入口（同步模板，子类可重写）
+#pragma mark - 取消
+
+- (void)cancelCurrentRequest {
+    self.isCancelled = YES;
+    if (self.currentRequest) {
+        GGPermissionLogInfo(@"Handler 取消当前 Request：%@", NSStringFromClass([self.currentRequest class]));
+        [self.currentRequest cancel];
+        self.currentRequest = nil;
+    }
+}
+
+#pragma mark - 默认入口
+
 - (void)requestPermission:(GGPermissionType)type callback:(GGPermissionCallback)callback {
+    self.isCancelled = NO;
+    __weak typeof(self) ws = self;
     dispatch_async(dispatch_get_main_queue(), ^{
-        NSNumber *status = [self currentSystemStatus];
+        __strong typeof(ws) strongSelf = ws;
+        if (!strongSelf) { return; }
+
+        // 取消后不再读取状态、不再发起请求，直接回调 Cancelled
+        if (strongSelf.isCancelled) {
+            GGPermissionLogInfo(@"Handler 已取消，跳过请求（type=%ld）", (long)type);
+            if (callback) callback(NO, @(GGPermissionErrorCancelled));
+            return;
+        }
+
+        NSNumber *status = [strongSelf currentSystemStatus];
+
+        // 读状态期间可能被取消，再次检查
+        if (strongSelf.isCancelled) {
+            GGPermissionLogInfo(@"Handler 读状态后已取消，跳过请求（type=%ld）", (long)type);
+            if (callback) callback(NO, @(GGPermissionErrorCancelled));
+            return;
+        }
 
         if (status.integerValue < 0) {
             GGPermissionLogWarning(@"请求 %ld 返回负错误码：%@", (long)type, status);
@@ -50,25 +81,32 @@
             return;
         }
 
-        if ([self isGrantedForStatus:status]) {
+        if ([strongSelf isGrantedForStatus:status]) {
             GGPermissionLogInfo(@"请求 %ld 已授权，直接回调", (long)type);
             if (callback) callback(YES, status);
             return;
         }
 
-        if ([self isDeniedOrRestrictedForStatus:status]) {
+        if ([strongSelf isDeniedOrRestrictedForStatus:status]) {
             GGPermissionLogInfo(@"请求 %ld 已拒绝/受限，引导设置", (long)type);
-            [self guideToSettingWithType:type status:status callback:callback];
+            [strongSelf guideToSettingWithType:type status:status callback:callback];
             return;
         }
 
         GGPermissionLogInfo(@"请求 %ld 状态未确定，发起请求", (long)type);
-        [self startRequestWithType:type callback:callback];
+        [strongSelf startRequestWithType:type callback:callback];
     });
 }
 
 #pragma mark - Request 管理
+
 - (void)startRequestWithType:(GGPermissionType)type callback:(GGPermissionCallback)callback {
+    if (self.isCancelled) {
+        if (callback) callback(NO, @(GGPermissionErrorCancelled));
+        return;
+    }
+
+    // 如果已有 Request 在飞，先取消（其回调会收到 Cancelled）
     if (self.currentRequest) {
         GGPermissionLogInfo(@"取消旧的 Request：%@", NSStringFromClass([self.currentRequest class]));
         [self.currentRequest cancel];
@@ -86,27 +124,39 @@
     GGPermissionLogInfo(@"发起新请求：%@", NSStringFromClass([req class]));
 
     __weak typeof(self) ws = self;
+    __weak GGPermissionBaseRequest *weakReq = req;
     [req startRequest:type callback:^(BOOL granted, NSNumber *statusCode) {
         __strong typeof(ws) strongSelf = ws;
-        if (!strongSelf) {
+        __strong GGPermissionBaseRequest *strongReq = weakReq;
+        if (!strongSelf || !strongReq) {
             GGPermissionLogDebug(@"Handler 已释放，丢弃回调");
             return;
         }
-
-        if (strongSelf.currentRequest != req) {
+        // 忽略旧 Request 的迟到回调
+        if (strongSelf.currentRequest != strongReq) {
             GGPermissionLogDebug(@"旧 Request 回调被忽略");
             return;
         }
-
+        // Handler 已被取消，忽略 Request 回调（订阅者已收到 Cancelled）
+        if (strongSelf.isCancelled) {
+            GGPermissionLogDebug(@"Handler 已取消，忽略 Request 回调");
+            return;
+        }
         strongSelf.currentRequest = nil;
         if (callback) callback(granted, statusCode);
     }];
 }
 
 #pragma mark - 引导设置
+
 - (void)guideToSettingWithType:(GGPermissionType)type
                         status:(NSNumber *)status
                       callback:(GGPermissionCallback)callback {
+    if (self.isCancelled) {
+        if (callback) callback(NO, @(GGPermissionErrorCancelled));
+        return;
+    }
+
     GGPermission *main = [GGPermission shareInstance];
     if (!main.autoTipEnable) {
         GGPermissionLogInfo(@"autoTipEnable = NO，直接回调");
@@ -143,8 +193,13 @@
             return;
         }
 
-        NSNumber *newStatus = [strongSelf currentSystemStatus];
+        if (strongSelf.isCancelled) {
+            GGPermissionLogInfo(@"Handler 已取消，忽略 goSetting 回调");
+            if (callback) callback(NO, @(GGPermissionErrorCancelled));
+            return;
+        }
 
+        NSNumber *newStatus = [strongSelf currentSystemStatus];
         if (!newStatus) {
             GGPermissionLogWarning(@"从设置返回，但无法读取状态，返回原状态 %@", status);
             if (callback) callback(NO, status);

@@ -1,6 +1,6 @@
 //
 //  GGPermission.m
-//  GGPermission_Example
+//  GGPermission
 //
 //  Created by GG on 2026/9/18.
 //  Copyright © 2026 github6022244. All rights reserved.
@@ -8,12 +8,18 @@
 
 #import "GGPermission.h"
 #import "GGPermissionProtocol.h"
+#import "GGPermissionTask.h"
 #import "GGPermissionLoggerMacros.h"
 
 @interface GGPermission ()
-@property (nonatomic, copy) GGPermissionCallback block;
-@property (nonatomic, assign) BOOL isCallbackExecuted;
+/// type -> handler
 @property (nonatomic, strong) NSMutableDictionary<NSNumber *, id<GGPermissionHandlerProtocol>> *handlerMap;
+/// 正在执行的 Task（同一时刻最多一个）
+@property (nonatomic, strong, nullable) GGPermissionTask *executingTask;
+/// 排队中的 Task（按 type 去重）
+@property (nonatomic, strong) NSMutableArray<GGPermissionTask *> *pendingTasks;
+/// 串行队列，保证 Task 状态变更线程安全（入口已保证主线程，队列主要用于语义清晰）
+@property (nonatomic, strong) dispatch_queue_t taskQueue;
 @end
 
 @implementation GGPermission
@@ -21,6 +27,7 @@
 static GGPermission *_instance;
 
 #pragma mark - Singleton
+
 + (instancetype)shareInstance {
     static dispatch_once_t onceToken;
     dispatch_once(&onceToken, ^{
@@ -44,6 +51,7 @@ static GGPermission *_instance;
 - (instancetype)init {
     if (self = [super init]) {
         _autoTipEnable = YES;
+        _taskQueue = dispatch_queue_create("com.ggpermission.task.queue", DISPATCH_QUEUE_SERIAL);
 
         _cameraPushSettingTips = @"相机权限未开启，是否前往设置";
         _photoPushSettingTips = @"相册权限未开启，是否前往设置";
@@ -62,14 +70,15 @@ static GGPermission *_instance;
         _healthSleepPushSettingTips = @"睡眠权限未开启，是否前往设置";
         _healthWorkoutPushSettingTips = @"锻炼权限未开启，是否前往设置";
 
-        _isCallbackExecuted = NO;
         _handlerMap = [NSMutableDictionary dictionary];
+        _pendingTasks = [NSMutableArray array];
         [self registerHandlers];
     }
     return self;
 }
 
-#pragma mark - 注册所有已编译进来的 Handler
+#pragma mark - 注册 Handler
+
 - (void)registerHandlers {
     NSDictionary<NSString *, NSArray<NSNumber *> *> *map = @{
         @"GGPermissionPhotoHandler":        @[@(GGPermissionTypePhoto),
@@ -110,8 +119,8 @@ static GGPermission *_instance;
 }
 
 #pragma mark - Public
+
 - (void)permissonType:(GGPermissionType)type withHandle:(GGPermissionCallback)callback {
-    // 主线程保护
     if (![NSThread isMainThread]) {
         dispatch_async(dispatch_get_main_queue(), ^{
             [self permissonType:type withHandle:callback];
@@ -119,42 +128,160 @@ static GGPermission *_instance;
         return;
     }
 
-    if (self.block && self.block != callback) {
-        GGPermissionLogWarning(@"丢弃未完成的旧权限请求");
-        self.block = nil;
+    if (!callback) {
+        GGPermissionLogWarning(@"permissonType:withHandle: callback 为 nil，直接返回");
+        return;
     }
-    self.block = callback;
-    self.isCallbackExecuted = NO;
 
-    id<GGPermissionHandlerProtocol> handler = self.handlerMap[@(type)];
+    // 1. 已有同 type Task 在排队中 → 追加订阅者
+    GGPermissionTask *pendingSame = [self _pendingTaskForType:type];
+    if (pendingSame) {
+        GGPermissionLogInfo(@"同 type 排队中的 Task 已存在，追加订阅者（type=%ld）", (long)type);
+        [pendingSame addSubscriber:callback];
+        return;
+    }
+
+    // 2. 正在执行的 Task 是同 type → 追加订阅者
+    if (self.executingTask && self.executingTask.type == type) {
+        GGPermissionLogInfo(@"同 type 执行中的 Task 已存在，追加订阅者（type=%ld）", (long)type);
+        [self.executingTask addSubscriber:callback];
+        return;
+    }
+
+    // 3. 创建新 Task
+    GGPermissionTask *task = [GGPermissionTask taskWithType:type];
+    [task addSubscriber:callback];
+
+    // 4. 没有正在执行的 Task → 立即执行；否则入队
+    if (!self.executingTask) {
+        [self _startTask:task];
+    } else {
+        GGPermissionLogInfo(@"不同 type 排队：type=%ld（当前执行 type=%ld）",
+                            (long)type, (long)self.executingTask.type);
+        [self.pendingTasks addObject:task];
+    }
+}
+
+- (void)cancelTaskWithType:(GGPermissionType)type {
+    if (![NSThread isMainThread]) {
+        dispatch_async(dispatch_get_main_queue(), ^{
+            [self cancelTaskWithType:type];
+        });
+        return;
+    }
+
+    // 取消执行中的
+    if (self.executingTask && self.executingTask.type == type) {
+        GGPermissionLogInfo(@"取消执行中的 Task(type=%ld)", (long)type);
+
+        // 先通知 Handler 取消当前 Request，避免 Request 继续回调
+        id<GGPermissionHandlerProtocol> handler = self.handlerMap[@(type)];
+        if ([handler respondsToSelector:@selector(cancelCurrentRequest)]) {
+            [handler cancelCurrentRequest];
+        }
+
+        [self.executingTask cancel];
+        self.executingTask = nil;
+        [self _startNextPendingTask];
+        return;
+    }
+
+    // 取消排队中的
+    NSMutableArray<GGPermissionTask *> *toRemove = [NSMutableArray array];
+    for (GGPermissionTask *task in self.pendingTasks) {
+        if (task.type == type) {
+            [toRemove addObject:task];
+        }
+    }
+    for (GGPermissionTask *task in toRemove) {
+        [task cancel];
+        [self.pendingTasks removeObject:task];
+    }
+}
+
+- (void)cancelAllTasks {
+    if (![NSThread isMainThread]) {
+        dispatch_async(dispatch_get_main_queue(), ^{
+            [self cancelAllTasks];
+        });
+        return;
+    }
+
+    if (self.executingTask) {
+        // 先通知 Handler 取消当前 Request
+        id<GGPermissionHandlerProtocol> handler = self.handlerMap[@(self.executingTask.type)];
+        if ([handler respondsToSelector:@selector(cancelCurrentRequest)]) {
+            [handler cancelCurrentRequest];
+        }
+
+        [self.executingTask cancel];
+        self.executingTask = nil;
+    }
+    for (GGPermissionTask *task in self.pendingTasks.copy) {
+        [task cancel];
+    }
+    [self.pendingTasks removeAllObjects];
+}
+
+#pragma mark - Task 调度
+
+- (nullable GGPermissionTask *)_pendingTaskForType:(GGPermissionType)type {
+    for (GGPermissionTask *task in self.pendingTasks) {
+        if (task.type == type) {
+            return task;
+        }
+    }
+    return nil;
+}
+
+- (void)_startTask:(GGPermissionTask *)task {
+    self.executingTask = task;
+
+    id<GGPermissionHandlerProtocol> handler = self.handlerMap[@(task.type)];
     if (!handler) {
-        GGPermissionLogError(@"未引入 %ld 对应的 subspec，请在 Podfile 中添加", (long)type);
-        [self executeBlock:NO statusCode:@(GGPermissionErrorUnknown)];
+        GGPermissionLogError(@"未引入 %ld 对应的 subspec，请在 Podfile 中添加", (long)task.type);
+        [self _finishTask:task granted:NO statusCode:@(GGPermissionErrorUnknown)];
         return;
     }
 
     __weak typeof(self) ws = self;
-    [handler requestPermission:type callback:^(BOOL granted, NSNumber *statusCode) {
+    __weak GGPermissionTask *weakTask = task;
+    [handler requestPermission:task.type callback:^(BOOL granted, NSNumber *statusCode) {
         __strong typeof(ws) strongSelf = ws;
-        if (!strongSelf) return;
-        [strongSelf executeBlock:granted statusCode:statusCode];
+        __strong GGPermissionTask *strongTask = weakTask;
+        if (!strongSelf || !strongTask) { return; }
+
+        // 忽略非当前 Task 的迟到回调
+        if (strongSelf.executingTask != strongTask) {
+            GGPermissionLogDebug(@"迟到回调被忽略（task type=%ld）", (long)strongTask.type);
+            return;
+        }
+        [strongSelf _finishTask:strongTask granted:granted statusCode:statusCode];
     }];
 }
 
-#pragma mark - 统一回调
-- (void)executeBlock:(BOOL)granted statusCode:(NSNumber *)statusCode {
-    if (self.isCallbackExecuted) {
-        GGPermissionLogWarning(@"重复回调被忽略");
-        return;
-    }
-    self.isCallbackExecuted = YES;
+- (void)_finishTask:(GGPermissionTask *)task
+            granted:(BOOL)granted
+         statusCode:(NSNumber *)statusCode {
+    if (self.executingTask != task) { return; }
+    self.executingTask = nil;
 
-    GGPermissionCallback cb = self.block;
-    self.block = nil;
-    if (cb) cb(granted, statusCode);
+    [task finishWithGranted:granted statusCode:statusCode];
+    [self _startNextPendingTask];
+}
+
+- (void)_startNextPendingTask {
+    if (self.executingTask) { return; }
+    if (self.pendingTasks.count == 0) { return; }
+
+    GGPermissionTask *next = self.pendingTasks.firstObject;
+    [self.pendingTasks removeObjectAtIndex:0];
+    GGPermissionLogInfo(@"从队列取出 Task(type=%ld) 开始执行", (long)next.type);
+    [self _startTask:next];
 }
 
 #pragma mark - set/get
+
 - (void)setLogLevel:(GGPermissionLogLevel)logLevel {
     [GGPermissionLogger sharedLogger].logLevel = logLevel;
 }

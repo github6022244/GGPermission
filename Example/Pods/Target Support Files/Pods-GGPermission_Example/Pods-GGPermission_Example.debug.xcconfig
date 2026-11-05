@@ -3,7 +3,7 @@ FRAMEWORK_SEARCH_PATHS = $(inherited) "${PODS_CONFIGURATION_BUILD_DIR}/GGPermiss
 GCC_PREPROCESSOR_DEFINITIONS = $(inherited) COCOAPODS=1
 HEADER_SEARCH_PATHS = $(inherited) "${PODS_CONFIGURATION_BUILD_DIR}/GGPermission/GGPermission.framework/Headers" "${PODS_CONFIGURATION_BUILD_DIR}/GGWindowManager/GGWindowManager.framework/Headers"
 LD_RUNPATH_SEARCH_PATHS = $(inherited) '@executable_path/Frameworks' '@loader_path/Frameworks'
-OTHER_LDFLAGS = $(inherited) -framework "CoreLocation" -framework "Foundation" -framework "GGPermission" -framework "GGWindowManager" -framework "UIKit"
+OTHER_LDFLAGS = $(inherited) -framework "AVFoundation" -framework "Contacts" -framework "CoreBluetooth" -framework "CoreLocation" -framework "EventKit" -framework "Foundation" -framework "GGPermission" -framework "GGWindowManager" -framework "HealthKit" -framework "Photos" -framework "UIKit" -framework "UserNotifications"
 OTHER_MODULE_VERIFIER_FLAGS = $(inherited) "-F${PODS_CONFIGURATION_BUILD_DIR}/GGPermission" "-F${PODS_CONFIGURATION_BUILD_DIR}/GGWindowManager"
 PODS_BUILD_DIR = ${BUILD_DIR}
 PODS_CONFIGURATION_BUILD_DIR = ${PODS_BUILD_DIR}/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)

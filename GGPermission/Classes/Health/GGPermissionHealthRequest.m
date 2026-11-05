@@ -44,10 +44,12 @@
         dispatch_async(dispatch_get_main_queue(), ^{
             __strong typeof(ws) strongSelf = ws;
             if (!strongSelf) return;
-
+            
             // HealthKit 回调只告诉你"弹窗流程是否完成"，
             // 用户是否同意需通过读数据时判断。
             // 此处约定：success = YES 即认为用户完成了授权选择。
+            // 对应 statusCode = 0（granted = YES）/ 1（granted = NO），
+            // 不使用 HealthKit 原始状态（HealthKit 不提供同步状态查询）。
             [strongSelf executeCallback:success
                              statusCode:@(success ? 0 : GGPermissionErrorUnknown)];
         });

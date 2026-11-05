@@ -3,9 +3,33 @@ use_frameworks!
 platform :ios, '13.0'
 
 target 'GGPermission_Example' do
-  # Core 会被 Photo / Camera 自动带进来，不用显式写
-  pod 'GGPermission', :path => '../'
-  pod 'GGPermission/Location', :path => '../'
+#  pod 'GGPermission', :path => '../'
+
+  # 方式 A：从 Git 引入（按 podspec 的 tag）
+#  pod 'GGPermission', :git => 'https://github.com/github6022244/GGPermission.git', :tag => '1.0.2', :subspecs => [
+#    'Core',
+#    'Photo',
+#    'Camera',
+#    'Location',
+#    'Microphone',
+#    'Contacts',
+#    'Notification',
+#    'Calendar',
+#    'Bluetooth',
+#    'Health'
+#  ]
+
+  # Core 会被 Photo / Camera... 自动带进来，不用显式写
+#  pod 'GGPermission/Core',         :path => '../'
+  pod 'GGPermission/Photo',        :path => '../'
+  pod 'GGPermission/Camera',       :path => '../'
+  pod 'GGPermission/Location',     :path => '../'
+  pod 'GGPermission/Microphone',   :path => '../'
+  pod 'GGPermission/Contacts',     :path => '../'
+  pod 'GGPermission/Notification', :path => '../'
+  pod 'GGPermission/Calendar',     :path => '../'
+#  pod 'GGPermission/Bluetooth',    :path => '../'
+  pod 'GGPermission/Health',       :path => '../'
 
   target 'GGPermission_Tests' do
     inherit! :search_paths

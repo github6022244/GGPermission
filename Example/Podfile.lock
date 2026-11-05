@@ -1,17 +1,45 @@
 PODS:
-  - GGPermission (1.0.0):
-    - GGPermission/Core (= 1.0.0)
+  - GGPermission/Bluetooth (1.0.2):
+    - GGPermission/Core
     - GGWindowManager
-  - GGPermission/Core (1.0.0):
+  - GGPermission/Calendar (1.0.2):
+    - GGPermission/Core
     - GGWindowManager
-  - GGPermission/Location (1.0.0):
+  - GGPermission/Camera (1.0.2):
+    - GGPermission/Core
+    - GGWindowManager
+  - GGPermission/Contacts (1.0.2):
+    - GGPermission/Core
+    - GGWindowManager
+  - GGPermission/Core (1.0.2):
+    - GGWindowManager
+  - GGPermission/Health (1.0.2):
+    - GGPermission/Core
+    - GGWindowManager
+  - GGPermission/Location (1.0.2):
+    - GGPermission/Core
+    - GGWindowManager
+  - GGPermission/Microphone (1.0.2):
+    - GGPermission/Core
+    - GGWindowManager
+  - GGPermission/Notification (1.0.2):
+    - GGPermission/Core
+    - GGWindowManager
+  - GGPermission/Photo (1.0.2):
     - GGPermission/Core
     - GGWindowManager
   - GGWindowManager (0.1.1)
 
 DEPENDENCIES:
-  - GGPermission (from `../`)
+  - GGPermission/Bluetooth (from `../`)
+  - GGPermission/Calendar (from `../`)
+  - GGPermission/Camera (from `../`)
+  - GGPermission/Contacts (from `../`)
+  - GGPermission/Health (from `../`)
   - GGPermission/Location (from `../`)
+  - GGPermission/Microphone (from `../`)
+  - GGPermission/Notification (from `../`)
+  - GGPermission/Photo (from `../`)
 
 SPEC REPOS:
   trunk:
@@ -22,9 +50,9 @@ EXTERNAL SOURCES:
     :path: "../"
 
 SPEC CHECKSUMS:
-  GGPermission: 670f27d67be34901176ef82d6edea82270e28ef6
+  GGPermission: c952b30581e3846635ab28b9812d663ef9b81772
   GGWindowManager: 8ac51a5fd7e30605ac7a2550eb3362bc9565f969
 
-PODFILE CHECKSUM: fc3571228e0b6e78539abad5130a17f10f0b78c8
+PODFILE CHECKSUM: 9b962f6cad96785d4370edc33d8872c8cc7ee2d6
 
 COCOAPODS: 1.17.0

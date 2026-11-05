@@ -16,11 +16,13 @@
 #pragma mark - 主入口（通知读取状态是异步的，需重写）
 - (void)requestPermission:(GGPermissionType)type callback:(GGPermissionCallback)callback {
     UNUserNotificationCenter *center = [UNUserNotificationCenter currentNotificationCenter];
+    __block BOOL responded = NO;
     __weak typeof(self) ws = self;
     [center getNotificationSettingsWithCompletionHandler:^(UNNotificationSettings * _Nonnull settings) {
         dispatch_async(dispatch_get_main_queue(), ^{
             __strong typeof(ws) strongSelf = ws;
-            if (!strongSelf) return;
+            if (!strongSelf || responded) return;
+            responded = YES;
 
             UNAuthorizationStatus status = settings.authorizationStatus;
             NSNumber *statusCode = @(status);
