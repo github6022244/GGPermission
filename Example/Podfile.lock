@@ -1,7 +1,4 @@
 PODS:
-  - GGPermission/Bluetooth (1.0.2):
-    - GGPermission/Core
-    - GGWindowManager
   - GGPermission/Calendar (1.0.2):
     - GGPermission/Core
     - GGWindowManager
@@ -31,7 +28,6 @@ PODS:
   - GGWindowManager (0.1.1)
 
 DEPENDENCIES:
-  - GGPermission/Bluetooth (from `../`)
   - GGPermission/Calendar (from `../`)
   - GGPermission/Camera (from `../`)
   - GGPermission/Contacts (from `../`)
@@ -53,6 +49,6 @@ SPEC CHECKSUMS:
   GGPermission: c952b30581e3846635ab28b9812d663ef9b81772
   GGWindowManager: 8ac51a5fd7e30605ac7a2550eb3362bc9565f969
 
-PODFILE CHECKSUM: 9b962f6cad96785d4370edc33d8872c8cc7ee2d6
+PODFILE CHECKSUM: 8755206053644929f4d79df4a276e3942791c0e9
 
 COCOAPODS: 1.17.0

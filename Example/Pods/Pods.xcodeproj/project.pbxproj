@@ -8,262 +8,259 @@
 
 /* Begin PBXBuildFile section */
 		014BD221A0AC9DB0D614352645A1A653 /* Pods-GGPermission_Example-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 06FED17568FDC49C68CE5D18F0371E83 /* Pods-GGPermission_Example-dummy.m */; };
-		03082462105F5EC4770960B72775845B /* GGPermissionBaseRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = F464A760E8B3D91E7DC53F3DA96DF37C /* GGPermissionBaseRequest.m */; };
-		076B845AA6E21D74C28563D0D389696E /* UserNotifications.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 379B264394C7871488068EE10AD48EE8 /* UserNotifications.framework */; };
-		07FC72E03756DC7975C2A66525D17709 /* GGWindowLogHelper.h in Headers */ = {isa = PBXBuildFile; fileRef = 8E850E1543068762C5D48CBF3A554862 /* GGWindowLogHelper.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		0C4624C3336A9A9EF41364E9576EED77 /* GGPermissionMicrophoneRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 2E39D4F6AA250BC4B4F2BD9E83241C24 /* GGPermissionMicrophoneRequest.m */; };
-		0DB721612B83A9C9CF1EF1336D77FEE2 /* GGPermissionLoggerMacros.m in Sources */ = {isa = PBXBuildFile; fileRef = 2B2F57A728A9A05CD3B3C665231FD820 /* GGPermissionLoggerMacros.m */; };
-		1036BD73794653E0363D21A867FC11D1 /* HealthKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 293D395B8E1D5AA9603717A983F3D746 /* HealthKit.framework */; };
-		125D519CA7A97F56825C6E2CF000D408 /* GGPermission.h in Headers */ = {isa = PBXBuildFile; fileRef = F981D1D95E1B71B9839E673C8C167295 /* GGPermission.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		12C17869D3F6636B149368D8EB91997E /* GGPermissionNotificationHandler.h in Headers */ = {isa = PBXBuildFile; fileRef = 20330824D5A0805B0A6FA76B250BC67A /* GGPermissionNotificationHandler.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		14CC3958CCA296A6168CC3AF798CB0CC /* GGPermission-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = BD0284A801D95DA71D77C9D0CDDC773E /* GGPermission-dummy.m */; };
-		179CD59D1498537D2FC5FAD7E5EE224E /* GGPermissionNotificationHandler.m in Sources */ = {isa = PBXBuildFile; fileRef = 75CEF46C54614353B26F96DE49F31997 /* GGPermissionNotificationHandler.m */; };
-		1F65C211F0FA3A80B74DF189D7EC22D0 /* GGPermissionCameraRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = DE42AFE605BC96AFF39DB8AE11D3DC00 /* GGPermissionCameraRequest.m */; };
-		2158CF8C7285EC05FB4C905CA48A329B /* GGPermissionBluetoothHandler.h in Headers */ = {isa = PBXBuildFile; fileRef = 06DDC9A847E51BC0BB456157543B6861 /* GGPermissionBluetoothHandler.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		21B7A9994F4F162A0E6926B1FE8343B3 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FF59594A06F6BEE96772BECBD3CC9EB4 /* UIKit.framework */; };
-		2563D0D75E8CC994EA17962651B8006B /* GGPermissionBluetoothRequest.h in Headers */ = {isa = PBXBuildFile; fileRef = 8991280476A729B003D20CC250DDA54C /* GGPermissionBluetoothRequest.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		2F75004BDB147F0C89BA1D66E13FBCBD /* GGPermissionHealthHandler.m in Sources */ = {isa = PBXBuildFile; fileRef = 1009F248717A1881D7614F2C87FC90D4 /* GGPermissionHealthHandler.m */; };
-		3F2FD93EAD12A152F54B23A82A6EB188 /* GGPermissionHealthHandler.h in Headers */ = {isa = PBXBuildFile; fileRef = F37A4CF26711CECE09C08BCDB9EDB88B /* GGPermissionHealthHandler.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		540A063A10244600BEEC60B56E3CB87F /* GGPermission.m in Sources */ = {isa = PBXBuildFile; fileRef = 8A7F722BA91144A6B94300194D3A9E20 /* GGPermission.m */; };
-		5489D3508AC327D61EB176462D3B325F /* GGPermissionCameraHandler.m in Sources */ = {isa = PBXBuildFile; fileRef = B151EB17201C797DD221A30BE89CD75F /* GGPermissionCameraHandler.m */; };
-		5586DDAB54A8794352CA8F306CAF4D70 /* GGPermissionCalendarRequest.h in Headers */ = {isa = PBXBuildFile; fileRef = A1BD30CC73EE29C3938DDF0C6D43B345 /* GGPermissionCalendarRequest.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		589CC2E0E99F149B7B4EE758DC061A5E /* GGPermissionPhotoHandler.h in Headers */ = {isa = PBXBuildFile; fileRef = 0D0AB322289C1111B8FFFE0189CC9A83 /* GGPermissionPhotoHandler.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		5D6210917ECDE20C7F457B3D66DC5EC8 /* GGPermissionContactsHandler.h in Headers */ = {isa = PBXBuildFile; fileRef = 1BAAB6AF798F6C427515B7E57A41479A /* GGPermissionContactsHandler.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		5E87E32120543CD96416C984B7CE485A /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6D80E072A3587CF4378B6A28AABE0D93 /* CoreLocation.framework */; };
-		5ED5F048BF4D372F1135873FECFCF663 /* GGPermission-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = FE41A209D0659531CC0E043516C0D0B1 /* GGPermission-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		61C1FAD143B897BA9A27B156E271C60B /* GGPermissionDefine.h in Headers */ = {isa = PBXBuildFile; fileRef = 34F225CE6A42193C809EF8950C353CAD /* GGPermissionDefine.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		6620687938E6AF8E698E5DC85CF536A9 /* CoreBluetooth.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C08F38B12F4731BA552AB84EE18C4294 /* CoreBluetooth.framework */; };
+		03D123B5025151C282D68F7119B25244 /* GGPermissionCameraHandler.m in Sources */ = {isa = PBXBuildFile; fileRef = A61F323C0C275947C6E896FBF5CD7FD9 /* GGPermissionCameraHandler.m */; };
+		087FB90DE7E8EDBE4B8C772B472D8A9C /* GGPermissionContactsHandler.m in Sources */ = {isa = PBXBuildFile; fileRef = 2EAA31F884EEB0F577D4781C93D7DFDB /* GGPermissionContactsHandler.m */; };
+		1014ADD9F5C78D1AC55AC79944C27A0C /* GGPermissionLocationRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 1C3BC29EF228FD0ACF56580232BD6987 /* GGPermissionLocationRequest.m */; };
+		16E483AA30E19391113EAA8FF2F60262 /* GGPermissionLocationHandler.m in Sources */ = {isa = PBXBuildFile; fileRef = 82DCD8008A73D61D1BCB98B278271673 /* GGPermissionLocationHandler.m */; };
+		17DE9C68F038D4E789EBA80BD956ECEB /* UIWindow+GG.h in Headers */ = {isa = PBXBuildFile; fileRef = BFFAF144E360CEFE70709D188F7A891A /* UIWindow+GG.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		193E98D1040C2D9A740912044CAC72FD /* GGPermissionMicrophoneHandler.h in Headers */ = {isa = PBXBuildFile; fileRef = 74E708206574B6B83018505CA7FE69CB /* GGPermissionMicrophoneHandler.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		19535C9F94A95BFFF7F7B153778A5A17 /* GGPermissionContactsHandler.h in Headers */ = {isa = PBXBuildFile; fileRef = 9062E9ACB54A4FF894C943D89A9AE87D /* GGPermissionContactsHandler.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		1C5FA245F2FE59CADF18C58B2550DFF4 /* GGPermission.m in Sources */ = {isa = PBXBuildFile; fileRef = A01C10C4B743CDAC6F5D71EB65F7D2B4 /* GGPermission.m */; };
+		25D1FCE4F7AC65EE3512DC96D61A3CAB /* GGPermissionUIHelper.h in Headers */ = {isa = PBXBuildFile; fileRef = 62C035E6109E174BA32D6643D5BD999B /* GGPermissionUIHelper.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		25F50F023A8D3AE5C2660F1BD4904378 /* GGPermissionHealthHandler.m in Sources */ = {isa = PBXBuildFile; fileRef = 2F153AF8F3452591E6B900CB7B227691 /* GGPermissionHealthHandler.m */; };
+		29B9F1345F8A0DE7155A6EAF9C8B40D6 /* GGWindowLogHelper.h in Headers */ = {isa = PBXBuildFile; fileRef = 8E850E1543068762C5D48CBF3A554862 /* GGWindowLogHelper.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		2A0938440E8A3DB1E48888E2BEC431B6 /* GGPermissionCalendarHandler.m in Sources */ = {isa = PBXBuildFile; fileRef = 4F880BFDBD31A6DDD7B873D3C9610A54 /* GGPermissionCalendarHandler.m */; };
+		2A7B70705021F02C5686F25E5E2FA108 /* GGPermissionCalendarHandler.h in Headers */ = {isa = PBXBuildFile; fileRef = 8797E20B92BD0372F96DE98E38F0FCBA /* GGPermissionCalendarHandler.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		35BAEBD927B695CEC5E751B00B395382 /* GGPermissionHealthRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = DCA514536BCE4877EB38C6375AF48A0B /* GGPermissionHealthRequest.m */; };
+		392629232EF93F18DCA8CE036F0CBC8D /* UIViewController+GGPermission.h in Headers */ = {isa = PBXBuildFile; fileRef = 0269AF358C66B23AB5DBD3CD5242AB91 /* UIViewController+GGPermission.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		396032DC18D39C268AC2BA630FB189B6 /* GGPermission-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = E430AD8658C61E1E5894AA3C05B74C61 /* GGPermission-dummy.m */; };
+		3AC83A78D15AF5D40AE925CE5875BE8A /* GGPermissionContactsRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 03382016359125C198F8CAD3F548D7C3 /* GGPermissionContactsRequest.m */; };
+		3C7002E058200F359EB6B6F68C5B3AC6 /* GGPermissionNotificationRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 1716E24593E7294A860E02A1EBC7344F /* GGPermissionNotificationRequest.m */; };
+		3DE0E4D4E69F17C767D0E4DC259AB2A2 /* GGPermissionTask.m in Sources */ = {isa = PBXBuildFile; fileRef = FACB0ED91D71ADFC69F61C8EB8FF222D /* GGPermissionTask.m */; };
+		405C686E3FBFE7C6AB446E609D7CC239 /* UserNotifications.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 937D49235F42DB2F1A5A28B9C272036F /* UserNotifications.framework */; };
+		4485EA6AF45844C0FBABC1F48A5B7D7D /* GGPermissionCalendarRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 978D6E2F8AE7FF55AD95DCA0094E61A9 /* GGPermissionCalendarRequest.m */; };
+		455D8D7F228A307C459A690C68BC2C25 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F3E70178F2A81DAC2E95FD4C71D82487 /* Foundation.framework */; };
+		4567D05EC8562BCD71DFD19EC95AB3D2 /* GGPermissionLoggerMacros.h in Headers */ = {isa = PBXBuildFile; fileRef = 1B5E89855985C83CEEF48FBE74C58102 /* GGPermissionLoggerMacros.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		4991E355F256917689C393C5A39B5CE8 /* GGPermissionNotificationRequest.h in Headers */ = {isa = PBXBuildFile; fileRef = 6A4FF3D55B8016D207F0F11EEB7F3CA8 /* GGPermissionNotificationRequest.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		4B75CEA08EFD252962CC177789C6F6E2 /* GGPermissionPhotoRequest.h in Headers */ = {isa = PBXBuildFile; fileRef = 042CB9A0C4D7B0C6B6D8CD0EFA0596CD /* GGPermissionPhotoRequest.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		4CF252F73F94293DA8902B8235A08E7C /* GGPermissionLoggerMacros.m in Sources */ = {isa = PBXBuildFile; fileRef = 835C30C39BA2DD1551E50E92696EDFD0 /* GGPermissionLoggerMacros.m */; };
+		506DB1C2952BEA7CDCCBA2B2277A2DE8 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B4A289D5FAC3E2E182664A191038E799 /* AVFoundation.framework */; };
+		554ECEC1F59207ACD3D5DA8C312A669C /* GGWindowManager.h in Headers */ = {isa = PBXBuildFile; fileRef = 98AFCEFF1E48FA3350F62AEE7EC679C5 /* GGWindowManager.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		56A734F7DCE4592189C7C4B94C70C8AF /* GGWindowDefine.m in Sources */ = {isa = PBXBuildFile; fileRef = 61B8C95180D15741DCA329C8D5331B55 /* GGWindowDefine.m */; };
+		5C2DE896ECAE0E11365897300F242905 /* GGPermissionLogger.m in Sources */ = {isa = PBXBuildFile; fileRef = 78B1AF1F50D7A95ECD65D807A4E64D65 /* GGPermissionLogger.m */; };
+		5CBAD20623221455CDC832C33A3E0344 /* GGPermissionCameraHandler.h in Headers */ = {isa = PBXBuildFile; fileRef = B640A75770108523C9F0BF5397A5967D /* GGPermissionCameraHandler.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		5CED13D132D303479421A300D2ED76B9 /* GGPermissionLocationHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = E1C6203A7492C1DABDE347FCA6398042 /* GGPermissionLocationHelper.m */; };
 		67F3AAED5678D0E4D1D4BD0E63174121 /* Pods-GGPermission_Example-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 0EBF15BB8DA9E59E51D22995DDE03A0D /* Pods-GGPermission_Example-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		689CD1948247B1DCAC7863A48E703A17 /* GGPermissionMicrophoneHandler.h in Headers */ = {isa = PBXBuildFile; fileRef = A591A4229601B7AB55C2AEB704769B96 /* GGPermissionMicrophoneHandler.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		6932FF813B77D760048B9CA18029140A /* GGWindowDefine.h in Headers */ = {isa = PBXBuildFile; fileRef = 0D633C5ED6DDBA12956468D3C9CB3F20 /* GGWindowDefine.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		6A60EA8686B7051D9BEFBBF3D4E10163 /* GGPermissionPhotoHandler.m in Sources */ = {isa = PBXBuildFile; fileRef = 238A2DC93DB79A16D66E8D62D247CEF5 /* GGPermissionPhotoHandler.m */; };
-		71C21FE6DD5ED8EC7E7E2AE4C44455C3 /* UIViewController+GGPermission.h in Headers */ = {isa = PBXBuildFile; fileRef = F277CA1C4F4F9A0938BC212FCFB25C63 /* UIViewController+GGPermission.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		724E92F9F816B1D7D5570BD1EE85F5DF /* GGPermissionBluetoothRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 2CDCCE5B6CF78AE0A2B11D2F6C6C65D4 /* GGPermissionBluetoothRequest.m */; };
-		75663E230CA8747A163270D6502158A7 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3A637C274723110ADCA790BF3B1DD355 /* Foundation.framework */; };
+		6870F8B7A38243BEFA4BF73C69066F32 /* Photos.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 09E1AD3A65EF302506FE2BCE6E134F9B /* Photos.framework */; };
+		6AD7FD829C6B16CEEF07B73A1EFDF49B /* GGPermissionCalendarRequest.h in Headers */ = {isa = PBXBuildFile; fileRef = A1368A9EC6514962A57A451FE7FB117E /* GGPermissionCalendarRequest.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		6CFB0A9E4E1BEA14065F7785786B7B1B /* GGPermissionPhotoRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = D6545869A1A9F380608735961D7365BF /* GGPermissionPhotoRequest.m */; };
+		70F42EDAD44242778473F1DE4D64D132 /* GGPermissionBaseHandler.m in Sources */ = {isa = PBXBuildFile; fileRef = C29DCB6F4CE46356552366112F3E85E7 /* GGPermissionBaseHandler.m */; };
 		7680E583A202192F7621DF6AB6B9CE81 /* Pods-GGPermission_Tests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = F76D397D5B0A8CC6D98709CC39441834 /* Pods-GGPermission_Tests-dummy.m */; };
-		7C3DA3F24B5E2EF08EF4D2BCE0D426B5 /* GGPermissionBluetoothHandler.m in Sources */ = {isa = PBXBuildFile; fileRef = E280C5AF711B73E0F9D55E80EB4DA19C /* GGPermissionBluetoothHandler.m */; };
-		7D6C2E7EE91BCAF465CA0C33DF14F166 /* Photos.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F4A3A8AB206A5856D8DD64497F73925B /* Photos.framework */; };
-		81C6C7C4E4EAC0A266A1C022EA2DB0A9 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3A637C274723110ADCA790BF3B1DD355 /* Foundation.framework */; };
-		86E63E3E9D5D44CE64C975D3E55253A2 /* Contacts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C93941763A86A4B86A06DE49FBBCE795 /* Contacts.framework */; };
-		897E36CDD00B1D18F2EB2D00812EBBDE /* GGWindowManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 30D99CBCECF999CB3598E0FA6CD2A930 /* GGWindowManager.m */; };
-		8DDE356557838435D34ECBFFB106DC17 /* GGPermissionHealthRequest.h in Headers */ = {isa = PBXBuildFile; fileRef = D60EFF3291928B68213EF5DC54B0D1FE /* GGPermissionHealthRequest.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		8E0ACE467DA99C5AABB8E329C5A38F71 /* GGPermissionLocationHandler.m in Sources */ = {isa = PBXBuildFile; fileRef = 3F54ED592C1D3D9B657224121560ABCD /* GGPermissionLocationHandler.m */; };
-		8ED44ED3CE5231C39C7A1216663AEAC3 /* GGPermissionNotificationRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = C6720D6AB9071FEE957A955F620BF369 /* GGPermissionNotificationRequest.m */; };
-		9282E0AAF8523391902DF1233480443C /* GGPermissionLocationHelper.h in Headers */ = {isa = PBXBuildFile; fileRef = 63E3C53FA50BA370D74B805F8D5F1415 /* GGPermissionLocationHelper.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		9920B1E4A51853F697CC032E893F4E5C /* GGPermissionTask.m in Sources */ = {isa = PBXBuildFile; fileRef = CBFB786410A7FCAAF0DFFBF6A9EC473A /* GGPermissionTask.m */; };
-		A26EB928BFF2EDD31EE0746F84E21FBB /* GGPermissionLogger.m in Sources */ = {isa = PBXBuildFile; fileRef = 9FEB71869D5E62E39B1D9A21B80DA8FA /* GGPermissionLogger.m */; };
-		A40D02EE8B5460CF4008F42A810367B1 /* GGPermissionCalendarHandler.m in Sources */ = {isa = PBXBuildFile; fileRef = 73FB36078A83940ECD3C7931A3C6A63B /* GGPermissionCalendarHandler.m */; };
-		A9A2EEA4CE4B3B3B556249154B5CEE38 /* UIWindow+GG.h in Headers */ = {isa = PBXBuildFile; fileRef = BFFAF144E360CEFE70709D188F7A891A /* UIWindow+GG.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		AD1D383CF35BA0F93334125E0493B04E /* GGPermissionBaseRequest.h in Headers */ = {isa = PBXBuildFile; fileRef = 518AE68AAC0B6755B0C4FEF6CD7E88D9 /* GGPermissionBaseRequest.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		AE0D90CD097C36C964386CEC14E21680 /* UIWindow+GG.m in Sources */ = {isa = PBXBuildFile; fileRef = 79096D0F2A161510F686B189DDB22C9E /* UIWindow+GG.m */; };
-		B0293ED385DEA3B293E0DAFC2D3A4F02 /* GGPermissionMicrophoneRequest.h in Headers */ = {isa = PBXBuildFile; fileRef = A63F02065F77CC1CE0233D37F2DA77D8 /* GGPermissionMicrophoneRequest.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		B170323DA38222637E89921B89047933 /* GGPermissionLocationRequest.h in Headers */ = {isa = PBXBuildFile; fileRef = 0420A807BB3A256EBAF79CD4CEFEF064 /* GGPermissionLocationRequest.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		B193FB8ED4ADBB7E3E596F019840B595 /* UIViewController+GGPermission.m in Sources */ = {isa = PBXBuildFile; fileRef = B68A01658534B1745AF2442F69EFE3AE /* UIViewController+GGPermission.m */; };
-		B3A76B6BFFF06CA6E62AAB802E73F6E9 /* GGPermissionLogger.h in Headers */ = {isa = PBXBuildFile; fileRef = EA5ADE4AADDC9B6FB689A9FA1B0D2269 /* GGPermissionLogger.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		B3E14F7D3A5F6C7E25AE3ADD60E9E33D /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E66464380F3BA9142A87C4756AA31FB6 /* AVFoundation.framework */; };
-		B5EE02B7AC063B1563B593651BBAD7F2 /* GGPermissionBaseHandler.m in Sources */ = {isa = PBXBuildFile; fileRef = 01ECCA8CD110F2BE4A6799CE8BD1D386 /* GGPermissionBaseHandler.m */; };
-		B62B8EB83C600443AA574DF85CB96A2C /* GGWindowDefine.m in Sources */ = {isa = PBXBuildFile; fileRef = 61B8C95180D15741DCA329C8D5331B55 /* GGWindowDefine.m */; };
-		BC39377D8BEBBC66F5D8B8906E892DD3 /* EventKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5E5CA7E4F69180791F3D7864EBC472B5 /* EventKit.framework */; };
-		BCF9F23CC4FFE60C8BB3033D652EED41 /* GGWindowManager.h in Headers */ = {isa = PBXBuildFile; fileRef = 98AFCEFF1E48FA3350F62AEE7EC679C5 /* GGWindowManager.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		BEDC0EA1D65706DE54E53240F54B6084 /* GGPermissionNotificationRequest.h in Headers */ = {isa = PBXBuildFile; fileRef = 52DC1AD7C371B6C70B7A81C437679A6C /* GGPermissionNotificationRequest.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		C43152B5B3BF9B52AD309432DACF6DC5 /* GGPermissionProtocol.h in Headers */ = {isa = PBXBuildFile; fileRef = 4D79F4BDB9A60EE340AB429F27D68ECD /* GGPermissionProtocol.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		C4E945016F13C09794C095288AB0C021 /* GGPermissionMicrophoneHandler.m in Sources */ = {isa = PBXBuildFile; fileRef = C349675C597D825F5F74AD7FFCA96922 /* GGPermissionMicrophoneHandler.m */; };
-		C733BE6E4790C85657189870FB56A2BD /* GGWindowManager-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 8FE46D0A188AE47BCA5D4F5871E0E387 /* GGWindowManager-dummy.m */; };
-		CAD98FE690E2B56C84493C23AD558EBB /* GGPermissionCalendarHandler.h in Headers */ = {isa = PBXBuildFile; fileRef = 506244F6E220A2A788076E2A37A50321 /* GGPermissionCalendarHandler.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		D13FCB8F2D4EC9224A2C69A318D8C8C3 /* GGPermissionLocationHandler.h in Headers */ = {isa = PBXBuildFile; fileRef = BA6DC7AB835ABB8E379656583ED97451 /* GGPermissionLocationHandler.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		D2D84B4338BE10BE1F60431E7A4841FE /* GGPermissionLocationHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 2B7441D8845F22E6C8D11099C225FC23 /* GGPermissionLocationHelper.m */; };
-		D49F5DECDB6AABFC844ABBAD250D3865 /* GGPermissionCalendarRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = B44FB5379E49054C5A638D3D6F3417D2 /* GGPermissionCalendarRequest.m */; };
-		D6383CD964D54CB64C58B268A42FE40D /* GGPermissionCameraHandler.h in Headers */ = {isa = PBXBuildFile; fileRef = ED7DFFF77D45330DA3B5C98D64C86F81 /* GGPermissionCameraHandler.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		DA6DD6C1520E01D52C6941FBAC38793D /* GGPermissionLoggerMacros.h in Headers */ = {isa = PBXBuildFile; fileRef = A565FE1FA893C4CE336E70BC23324EC1 /* GGPermissionLoggerMacros.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		DAB8720678E158E8052F0814593339BA /* GGPermissionHealthRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 3E3DEA915125546DFEAF56DA8113FBE7 /* GGPermissionHealthRequest.m */; };
-		DC1AE7B4205B8609D9EB52006F210738 /* GGPermissionCameraRequest.h in Headers */ = {isa = PBXBuildFile; fileRef = 79CE8E6D5F38654BB736999D2B4E833F /* GGPermissionCameraRequest.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		DCA0F0D53DE994C9689E5C16C8A19A29 /* GGPermissionContactsRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 9989DB8F86AC861731023F2E5A814360 /* GGPermissionContactsRequest.m */; };
-		DCE9248F95F479B01B17A14FEDD6D60C /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3A637C274723110ADCA790BF3B1DD355 /* Foundation.framework */; };
-		E17F5FDCF7265C17AAE428A816DBB390 /* GGPermissionContactsHandler.m in Sources */ = {isa = PBXBuildFile; fileRef = 8FE6D4038C46AFA516F837081DB9BFEC /* GGPermissionContactsHandler.m */; };
-		E538212DDBE36590FAF24E6EF94C5ED1 /* GGPermissionPhotoRequest.h in Headers */ = {isa = PBXBuildFile; fileRef = 7830A11A52025B22447104B2383005C4 /* GGPermissionPhotoRequest.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		E617F58ACE47570CB98577D32AD97FA2 /* GGWindowManager-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 43D932E75F32A799FD9B3D82763D61E1 /* GGWindowManager-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		E86631A260EC468C888FA6D2B70C98B5 /* GGWindowLogHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = F40C6CABEBAE046B7A7EA0D32C46477E /* GGWindowLogHelper.m */; };
-		EA62138F45AB3CD02098EE865F299E49 /* GGPermissionUIHelper.h in Headers */ = {isa = PBXBuildFile; fileRef = 7A1529A3D122FEC91898CC4128C9AA39 /* GGPermissionUIHelper.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		EAC383370A72048717C920533F9B294A /* GGPermissionLocationRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 222AFF8D1F08EB85268B215A6C008F5E /* GGPermissionLocationRequest.m */; };
-		EAE45EABF828C4D1F5040FD41A2620D7 /* GGPermissionPhotoRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = DE1374C2CB119E2FED0DB53C28B5CD2C /* GGPermissionPhotoRequest.m */; };
-		EB4AA90833C4D6CC54A1A64FAD7C4C88 /* GGPermissionTask.h in Headers */ = {isa = PBXBuildFile; fileRef = 909C207CBC23AC516E95C76C049D3575 /* GGPermissionTask.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		F25CD33707135D3176E7FAC66FD293E7 /* GGPermissionBaseHandler.h in Headers */ = {isa = PBXBuildFile; fileRef = A14ABC4FCE398CC1605267263C52DA4D /* GGPermissionBaseHandler.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		76D01D6F0A820942297BDB9F5FA5DE3B /* GGPermissionPhotoHandler.m in Sources */ = {isa = PBXBuildFile; fileRef = 718A41062BFCAACB3496ED579B7642D7 /* GGPermissionPhotoHandler.m */; };
+		7EA56162DCAA4AEC9A6EE81ABC4AA87A /* GGPermissionBaseRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = E44A001EE7A524EC27FAAFF484EA7DA1 /* GGPermissionBaseRequest.m */; };
+		80AEFE7EF701344BC1D940CCEF600FB0 /* GGPermissionCameraRequest.h in Headers */ = {isa = PBXBuildFile; fileRef = 847AE635A2B0D9A681C4AD5F78407EC2 /* GGPermissionCameraRequest.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		81C6C7C4E4EAC0A266A1C022EA2DB0A9 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F3E70178F2A81DAC2E95FD4C71D82487 /* Foundation.framework */; };
+		83767DE75B8D5B855282C1742047B2E1 /* GGPermissionContactsRequest.h in Headers */ = {isa = PBXBuildFile; fileRef = D751876DAFB52E92509612D5497F9A3A /* GGPermissionContactsRequest.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		84A26E5E9CC06C85ED7BBC7D150029D2 /* HealthKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4BB8754AB408007D75A024DAD64E8532 /* HealthKit.framework */; };
+		85135C8F5CBAA63E2A4537C131A6B955 /* GGPermissionProtocol.h in Headers */ = {isa = PBXBuildFile; fileRef = EAC1AB79FE65D420131039268A8E1C96 /* GGPermissionProtocol.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		85BBCA9991256A04F72143C2E1EE847A /* GGPermissionMicrophoneHandler.m in Sources */ = {isa = PBXBuildFile; fileRef = AE255789CA111F647729B1EABA50F714 /* GGPermissionMicrophoneHandler.m */; };
+		881F65B01EFBDF75A46E8FAA8ADA2FF8 /* GGWindowManager-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 43D932E75F32A799FD9B3D82763D61E1 /* GGWindowManager-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		89146CA8C2255E8C7871FFEAF1B4E5CB /* GGPermissionNotificationHandler.h in Headers */ = {isa = PBXBuildFile; fileRef = 4A9D47BCF7520D7B8C92AEF838E9CD7A /* GGPermissionNotificationHandler.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		8957E64FD467734F60789742090E985E /* Contacts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C59E4F6FB771DBAED01361E79BC177B4 /* Contacts.framework */; };
+		89D1DD7AB13D41B36CE32CC79E2A9021 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1D551E0476CE3DE342E330764215505F /* CoreLocation.framework */; };
+		8B529F28357318F9EA96A3CBBFB612B3 /* GGWindowLogHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = F40C6CABEBAE046B7A7EA0D32C46477E /* GGWindowLogHelper.m */; };
+		8B8CD720A2F6817FBF897E4FF63B7978 /* GGWindowManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 30D99CBCECF999CB3598E0FA6CD2A930 /* GGWindowManager.m */; };
+		8CE745B4ED9BD8E39F21D86F840BFFAE /* UIWindow+GG.m in Sources */ = {isa = PBXBuildFile; fileRef = 79096D0F2A161510F686B189DDB22C9E /* UIWindow+GG.m */; };
+		950DE1955E07EA356EBD2A04E1E8112B /* GGPermissionBaseHandler.h in Headers */ = {isa = PBXBuildFile; fileRef = 2DD197E4BE4C3E109DBDD1662AACEA9F /* GGPermissionBaseHandler.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		A7DE9F86111F236F47945985B6EB5D07 /* GGPermissionMicrophoneRequest.h in Headers */ = {isa = PBXBuildFile; fileRef = 487F075C606414EF7EECAD3A43105D35 /* GGPermissionMicrophoneRequest.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		A8B3B2857858E33D59EC0C329DD10EB3 /* GGWindowManager-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 8FE46D0A188AE47BCA5D4F5871E0E387 /* GGWindowManager-dummy.m */; };
+		AE45BFF3679DDBB8EB8BB54554D7F47F /* GGPermissionBaseRequest.h in Headers */ = {isa = PBXBuildFile; fileRef = DD53F7F133C8CD1CF6B46CAE33789935 /* GGPermissionBaseRequest.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		B7F467D965F758E41F9378DD30F98583 /* GGPermissionMicrophoneRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 4F4E9B5AC7320FA9A4CA45DDA84C3873 /* GGPermissionMicrophoneRequest.m */; };
+		B9971EF4E61AF16B3CD9C97083C32CEE /* GGPermissionHealthHandler.h in Headers */ = {isa = PBXBuildFile; fileRef = C10808C35B8E38EFE4CF8B3DFC27D728 /* GGPermissionHealthHandler.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		BAB9317176284438C7FDA09274084F60 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F3E70178F2A81DAC2E95FD4C71D82487 /* Foundation.framework */; };
+		BCC662005BB92766322311352E9AC2C0 /* GGPermissionPhotoHandler.h in Headers */ = {isa = PBXBuildFile; fileRef = 86C0FB70215C80C4391EFB076A33758A /* GGPermissionPhotoHandler.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		BE2FC57A827752F6F57853A51FA9B3B4 /* GGPermissionCameraRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = BCC54FB932EFBB7F8DD222C92C395EFE /* GGPermissionCameraRequest.m */; };
+		CFBCE62C3A1FCDCFFD850D1E8C93684B /* GGPermission.h in Headers */ = {isa = PBXBuildFile; fileRef = 080C7188FFE150CA492E11F0CFF1FD86 /* GGPermission.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		D070D346EDA61C8A7F880BDE8C9BC783 /* GGPermission-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = CBAE19F28C3BA8A82BB01E3A6D9D4D1D /* GGPermission-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		D32EB6249AC987EF4F749D6FA1A34F3B /* GGPermissionLocationHandler.h in Headers */ = {isa = PBXBuildFile; fileRef = 69F3CED7779695464C1A1DBE3E6D2A12 /* GGPermissionLocationHandler.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		D4CE8D79188623DA6B8AA79399C20878 /* GGPermissionNotificationHandler.m in Sources */ = {isa = PBXBuildFile; fileRef = D9845BE4B4BFB09E4694BC20337F8F13 /* GGPermissionNotificationHandler.m */; };
+		D5AF7EF5EED5944FE6697945F8A296DD /* GGWindowDefine.h in Headers */ = {isa = PBXBuildFile; fileRef = 0D633C5ED6DDBA12956468D3C9CB3F20 /* GGWindowDefine.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		D6626F0A55A02089DB00A8EDAD9F03C5 /* UIViewController+GGPermission.m in Sources */ = {isa = PBXBuildFile; fileRef = 75B083F30C426A3282E5EFC1B4DF4F99 /* UIViewController+GGPermission.m */; };
+		DBD14695A8DF00EC8577B5ED5101C19B /* GGPermissionHealthRequest.h in Headers */ = {isa = PBXBuildFile; fileRef = 7DFD6A9B602AEF7D16351376BBD758BC /* GGPermissionHealthRequest.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		DCE9248F95F479B01B17A14FEDD6D60C /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F3E70178F2A81DAC2E95FD4C71D82487 /* Foundation.framework */; };
+		E1A7A30DB52B2F01A1681D37CBE5ED0D /* GGPermissionLogger.h in Headers */ = {isa = PBXBuildFile; fileRef = 268ABB17FD8914BCAD266D7DB53F9D37 /* GGPermissionLogger.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		E3D02C1CCCFA794E547E4029257DC504 /* EventKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 721E8E1A1A213BAA826321A3BC9B0335 /* EventKit.framework */; };
+		EAB3CCDB6EDBC05A78E6CF14DD18CFDE /* GGPermissionLocationHelper.h in Headers */ = {isa = PBXBuildFile; fileRef = 3E1FB9D5A83BFD3F5E13C26426A3E5A0 /* GGPermissionLocationHelper.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		EAB82363F67F1475FF26C9DD7D463804 /* GGPermissionDefine.h in Headers */ = {isa = PBXBuildFile; fileRef = 589CFF675B3947B56C873FE1D0E9E98E /* GGPermissionDefine.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		EEEE4E81C437B79EF163097E81973ECB /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9D49F91331AAE3032D6BE2F35C406D78 /* UIKit.framework */; };
 		F44647C818CC3A301450B1A3539E7145 /* Pods-GGPermission_Tests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = B71A0BFDCE26F052480CEB0A3540AC1A /* Pods-GGPermission_Tests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		F48F8BE12D572D10B2DCE4FEC3DE3598 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3A637C274723110ADCA790BF3B1DD355 /* Foundation.framework */; };
-		FE753C66229990282CA1456A0A39F626 /* GGPermissionUIHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 8FA96351F974DF11C2BE1BE7DE779424 /* GGPermissionUIHelper.m */; };
-		FF96063D4FAA79184A8C59FA2191A447 /* GGPermissionContactsRequest.h in Headers */ = {isa = PBXBuildFile; fileRef = 3FAB9AB573C18040935193385357CB97 /* GGPermissionContactsRequest.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		F63DBF1CA507045E88B8E8E28129F8A6 /* GGPermissionUIHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 1B380A71ADD901CBB39D6ABAE8DAB93A /* GGPermissionUIHelper.m */; };
+		FDC68E0EB9A76A8A36B760D935AF2BDE /* GGPermissionTask.h in Headers */ = {isa = PBXBuildFile; fileRef = F9B2455078C43E35ADCF35AFD458A411 /* GGPermissionTask.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		FFE7C29F49027E2986F5CE63C4872376 /* GGPermissionLocationRequest.h in Headers */ = {isa = PBXBuildFile; fileRef = 3EC5ADDA1948359A8250300B9D3C4CA8 /* GGPermissionLocationRequest.h */; settings = {ATTRIBUTES = (Public, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		1018857F515557D001E9E94B51C46ABA /* PBXContainerItemProxy */ = {
+		2DF7C16CA02BF6A909C75CFA30AD54FC /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = 1B7E5D0A227A1231F89942D1156855A7;
 			remoteInfo = GGWindowManager;
 		};
-		34AC27AE3E0610C80E085971C3889AAF /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 30D0C96841CA847DEC7B771ABEB7333A;
-			remoteInfo = "Pods-GGPermission_Example";
-		};
-		DDA3956A0073440B68407D6A495530F8 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 1B7E5D0A227A1231F89942D1156855A7;
-			remoteInfo = GGWindowManager;
-		};
-		DDAA2150C0FB9AD7D715EA198F3F93D2 /* PBXContainerItemProxy */ = {
+		93F1F7A7F77EADA8ABD2DA1BA088625C /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = E045EB1129C1A338D3DB826871A865EA;
 			remoteInfo = GGPermission;
 		};
+		9AE3CB5F6C31BAC22D890E8A81CC568B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 1B7E5D0A227A1231F89942D1156855A7;
+			remoteInfo = GGWindowManager;
+		};
+		BEE55C01DC4FFF8251B34EBEDDF10C10 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 30D0C96841CA847DEC7B771ABEB7333A;
+			remoteInfo = "Pods-GGPermission_Example";
+		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		01CDE2F2B9C66C847FDF56C49A24E357 /* GGPermission.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = GGPermission.debug.xcconfig; sourceTree = "<group>"; };
-		01ECCA8CD110F2BE4A6799CE8BD1D386 /* GGPermissionBaseHandler.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = GGPermissionBaseHandler.m; path = GGPermission/Classes/Core/GGPermissionBaseHandler.m; sourceTree = "<group>"; };
-		0420A807BB3A256EBAF79CD4CEFEF064 /* GGPermissionLocationRequest.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = GGPermissionLocationRequest.h; path = GGPermission/Classes/Location/GGPermissionLocationRequest.h; sourceTree = "<group>"; };
+		0269AF358C66B23AB5DBD3CD5242AB91 /* UIViewController+GGPermission.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIViewController+GGPermission.h"; path = "GGPermission/Classes/Core/UIViewController+GGPermission.h"; sourceTree = "<group>"; };
+		03382016359125C198F8CAD3F548D7C3 /* GGPermissionContactsRequest.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = GGPermissionContactsRequest.m; path = GGPermission/Classes/Contacts/GGPermissionContactsRequest.m; sourceTree = "<group>"; };
+		042CB9A0C4D7B0C6B6D8CD0EFA0596CD /* GGPermissionPhotoRequest.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = GGPermissionPhotoRequest.h; path = GGPermission/Classes/Photo/GGPermissionPhotoRequest.h; sourceTree = "<group>"; };
 		065BEB316F8F82E6A2FF614A334E69F4 /* Pods-GGPermission_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-GGPermission_Tests.release.xcconfig"; sourceTree = "<group>"; };
-		06DDC9A847E51BC0BB456157543B6861 /* GGPermissionBluetoothHandler.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = GGPermissionBluetoothHandler.h; path = GGPermission/Classes/Bluetooth/GGPermissionBluetoothHandler.h; sourceTree = "<group>"; };
 		06FED17568FDC49C68CE5D18F0371E83 /* Pods-GGPermission_Example-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-GGPermission_Example-dummy.m"; sourceTree = "<group>"; };
+		080C7188FFE150CA492E11F0CFF1FD86 /* GGPermission.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = GGPermission.h; path = GGPermission/Classes/Core/GGPermission.h; sourceTree = "<group>"; };
+		09E1AD3A65EF302506FE2BCE6E134F9B /* Photos.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Photos.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS26.0.sdk/System/Library/Frameworks/Photos.framework; sourceTree = DEVELOPER_DIR; };
 		0BE1EC71EA2E4F3AC280F8637ECFAE06 /* Pods-GGPermission_Tests-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-GGPermission_Tests-Info.plist"; sourceTree = "<group>"; };
-		0D0AB322289C1111B8FFFE0189CC9A83 /* GGPermissionPhotoHandler.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = GGPermissionPhotoHandler.h; path = GGPermission/Classes/Photo/GGPermissionPhotoHandler.h; sourceTree = "<group>"; };
 		0D633C5ED6DDBA12956468D3C9CB3F20 /* GGWindowDefine.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = GGWindowDefine.h; path = GGWindowManager/Classes/GGWindowDefine.h; sourceTree = "<group>"; };
 		0EBF15BB8DA9E59E51D22995DDE03A0D /* Pods-GGPermission_Example-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-GGPermission_Example-umbrella.h"; sourceTree = "<group>"; };
-		1009F248717A1881D7614F2C87FC90D4 /* GGPermissionHealthHandler.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = GGPermissionHealthHandler.m; path = GGPermission/Classes/Health/GGPermissionHealthHandler.m; sourceTree = "<group>"; };
+		1716E24593E7294A860E02A1EBC7344F /* GGPermissionNotificationRequest.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = GGPermissionNotificationRequest.m; path = GGPermission/Classes/Notification/GGPermissionNotificationRequest.m; sourceTree = "<group>"; };
 		1885AE04C91DE16B1269C4B36057A841 /* Pods-GGPermission_Example-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-GGPermission_Example-Info.plist"; sourceTree = "<group>"; };
-		1BA96649B270BB65E97CAF8244E31E70 /* GGPermission.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = GGPermission.modulemap; sourceTree = "<group>"; };
-		1BAAB6AF798F6C427515B7E57A41479A /* GGPermissionContactsHandler.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = GGPermissionContactsHandler.h; path = GGPermission/Classes/Contacts/GGPermissionContactsHandler.h; sourceTree = "<group>"; };
-		1E7AAF61BE435EE0B3F1D31C256B3AA6 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; path = LICENSE; sourceTree = "<group>"; };
-		20330824D5A0805B0A6FA76B250BC67A /* GGPermissionNotificationHandler.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = GGPermissionNotificationHandler.h; path = GGPermission/Classes/Notification/GGPermissionNotificationHandler.h; sourceTree = "<group>"; };
-		222AFF8D1F08EB85268B215A6C008F5E /* GGPermissionLocationRequest.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = GGPermissionLocationRequest.m; path = GGPermission/Classes/Location/GGPermissionLocationRequest.m; sourceTree = "<group>"; };
+		1B380A71ADD901CBB39D6ABAE8DAB93A /* GGPermissionUIHelper.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = GGPermissionUIHelper.m; path = GGPermission/Classes/Core/GGPermissionUIHelper.m; sourceTree = "<group>"; };
+		1B5E89855985C83CEEF48FBE74C58102 /* GGPermissionLoggerMacros.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = GGPermissionLoggerMacros.h; path = GGPermission/Classes/Core/GGPermissionLoggerMacros.h; sourceTree = "<group>"; };
+		1C3BC29EF228FD0ACF56580232BD6987 /* GGPermissionLocationRequest.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = GGPermissionLocationRequest.m; path = GGPermission/Classes/Location/GGPermissionLocationRequest.m; sourceTree = "<group>"; };
+		1D551E0476CE3DE342E330764215505F /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS26.0.sdk/System/Library/Frameworks/CoreLocation.framework; sourceTree = DEVELOPER_DIR; };
+		1D6C855DFA0AA557629FC6EBD753FE7D /* GGPermission.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = GGPermission.release.xcconfig; sourceTree = "<group>"; };
 		2266C08D71A9199279D268C475FD6B3B /* Pods-GGPermission_Example.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-GGPermission_Example.modulemap"; sourceTree = "<group>"; };
-		238A2DC93DB79A16D66E8D62D247CEF5 /* GGPermissionPhotoHandler.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = GGPermissionPhotoHandler.m; path = GGPermission/Classes/Photo/GGPermissionPhotoHandler.m; sourceTree = "<group>"; };
 		245BFDF0B5AE44C587BAEB5AC49CFBB8 /* GGPermission */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = GGPermission; path = GGPermission.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		293D395B8E1D5AA9603717A983F3D746 /* HealthKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = HealthKit.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS26.0.sdk/System/Library/Frameworks/HealthKit.framework; sourceTree = DEVELOPER_DIR; };
-		2B2F57A728A9A05CD3B3C665231FD820 /* GGPermissionLoggerMacros.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = GGPermissionLoggerMacros.m; path = GGPermission/Classes/Core/GGPermissionLoggerMacros.m; sourceTree = "<group>"; };
-		2B7441D8845F22E6C8D11099C225FC23 /* GGPermissionLocationHelper.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = GGPermissionLocationHelper.m; path = GGPermission/Classes/Location/GGPermissionLocationHelper.m; sourceTree = "<group>"; };
-		2CDCCE5B6CF78AE0A2B11D2F6C6C65D4 /* GGPermissionBluetoothRequest.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = GGPermissionBluetoothRequest.m; path = GGPermission/Classes/Bluetooth/GGPermissionBluetoothRequest.m; sourceTree = "<group>"; };
+		268ABB17FD8914BCAD266D7DB53F9D37 /* GGPermissionLogger.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = GGPermissionLogger.h; path = GGPermission/Classes/Core/GGPermissionLogger.h; sourceTree = "<group>"; };
+		2DD197E4BE4C3E109DBDD1662AACEA9F /* GGPermissionBaseHandler.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = GGPermissionBaseHandler.h; path = GGPermission/Classes/Core/GGPermissionBaseHandler.h; sourceTree = "<group>"; };
 		2DF3470E2F39D8B8BA2BE5322FD64811 /* Pods-GGPermission_Example-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-GGPermission_Example-frameworks.sh"; sourceTree = "<group>"; };
-		2E39D4F6AA250BC4B4F2BD9E83241C24 /* GGPermissionMicrophoneRequest.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = GGPermissionMicrophoneRequest.m; path = GGPermission/Classes/Microphone/GGPermissionMicrophoneRequest.m; sourceTree = "<group>"; };
+		2EAA31F884EEB0F577D4781C93D7DFDB /* GGPermissionContactsHandler.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = GGPermissionContactsHandler.m; path = GGPermission/Classes/Contacts/GGPermissionContactsHandler.m; sourceTree = "<group>"; };
+		2F153AF8F3452591E6B900CB7B227691 /* GGPermissionHealthHandler.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = GGPermissionHealthHandler.m; path = GGPermission/Classes/Health/GGPermissionHealthHandler.m; sourceTree = "<group>"; };
 		30D99CBCECF999CB3598E0FA6CD2A930 /* GGWindowManager.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = GGWindowManager.m; path = GGWindowManager/Classes/GGWindowManager.m; sourceTree = "<group>"; };
 		314343621C3AB0429038673214693902 /* GGWindowManager.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = GGWindowManager.debug.xcconfig; sourceTree = "<group>"; };
-		34F225CE6A42193C809EF8950C353CAD /* GGPermissionDefine.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = GGPermissionDefine.h; path = GGPermission/Classes/Core/GGPermissionDefine.h; sourceTree = "<group>"; };
-		379B264394C7871488068EE10AD48EE8 /* UserNotifications.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UserNotifications.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS26.0.sdk/System/Library/Frameworks/UserNotifications.framework; sourceTree = DEVELOPER_DIR; };
 		37D0EB91644989768EB3D07F39A0E95E /* Pods-GGPermission_Tests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-GGPermission_Tests-acknowledgements.markdown"; sourceTree = "<group>"; };
+		38E882331E69D8810D5990A9F0BD56FB /* GGPermission.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; path = GGPermission.podspec; sourceTree = "<group>"; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		38EEF2A878DC56323138D671822F5310 /* Pods-GGPermission_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-GGPermission_Example.release.xcconfig"; sourceTree = "<group>"; };
-		3A637C274723110ADCA790BF3B1DD355 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS26.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
 		3B033E6B55754BEACE9E648E8E4C43CE /* Pods-GGPermission_Tests */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = "Pods-GGPermission_Tests"; path = Pods_GGPermission_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		3E3DEA915125546DFEAF56DA8113FBE7 /* GGPermissionHealthRequest.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = GGPermissionHealthRequest.m; path = GGPermission/Classes/Health/GGPermissionHealthRequest.m; sourceTree = "<group>"; };
-		3F54ED592C1D3D9B657224121560ABCD /* GGPermissionLocationHandler.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = GGPermissionLocationHandler.m; path = GGPermission/Classes/Location/GGPermissionLocationHandler.m; sourceTree = "<group>"; };
-		3FAB9AB573C18040935193385357CB97 /* GGPermissionContactsRequest.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = GGPermissionContactsRequest.h; path = GGPermission/Classes/Contacts/GGPermissionContactsRequest.h; sourceTree = "<group>"; };
+		3E1FB9D5A83BFD3F5E13C26426A3E5A0 /* GGPermissionLocationHelper.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = GGPermissionLocationHelper.h; path = GGPermission/Classes/Location/GGPermissionLocationHelper.h; sourceTree = "<group>"; };
+		3EC5ADDA1948359A8250300B9D3C4CA8 /* GGPermissionLocationRequest.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = GGPermissionLocationRequest.h; path = GGPermission/Classes/Location/GGPermissionLocationRequest.h; sourceTree = "<group>"; };
 		43D932E75F32A799FD9B3D82763D61E1 /* GGWindowManager-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "GGWindowManager-umbrella.h"; sourceTree = "<group>"; };
-		4D79F4BDB9A60EE340AB429F27D68ECD /* GGPermissionProtocol.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = GGPermissionProtocol.h; path = GGPermission/Classes/Core/GGPermissionProtocol.h; sourceTree = "<group>"; };
-		506244F6E220A2A788076E2A37A50321 /* GGPermissionCalendarHandler.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = GGPermissionCalendarHandler.h; path = GGPermission/Classes/Calendar/GGPermissionCalendarHandler.h; sourceTree = "<group>"; };
-		518AE68AAC0B6755B0C4FEF6CD7E88D9 /* GGPermissionBaseRequest.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = GGPermissionBaseRequest.h; path = GGPermission/Classes/Core/GGPermissionBaseRequest.h; sourceTree = "<group>"; };
-		52DC1AD7C371B6C70B7A81C437679A6C /* GGPermissionNotificationRequest.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = GGPermissionNotificationRequest.h; path = GGPermission/Classes/Notification/GGPermissionNotificationRequest.h; sourceTree = "<group>"; };
-		556C9BBA7FC07FE0278C1AC380A13A61 /* GGPermission.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = GGPermission.release.xcconfig; sourceTree = "<group>"; };
-		5E5CA7E4F69180791F3D7864EBC472B5 /* EventKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = EventKit.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS26.0.sdk/System/Library/Frameworks/EventKit.framework; sourceTree = DEVELOPER_DIR; };
+		487F075C606414EF7EECAD3A43105D35 /* GGPermissionMicrophoneRequest.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = GGPermissionMicrophoneRequest.h; path = GGPermission/Classes/Microphone/GGPermissionMicrophoneRequest.h; sourceTree = "<group>"; };
+		4A9D47BCF7520D7B8C92AEF838E9CD7A /* GGPermissionNotificationHandler.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = GGPermissionNotificationHandler.h; path = GGPermission/Classes/Notification/GGPermissionNotificationHandler.h; sourceTree = "<group>"; };
+		4BB8754AB408007D75A024DAD64E8532 /* HealthKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = HealthKit.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS26.0.sdk/System/Library/Frameworks/HealthKit.framework; sourceTree = DEVELOPER_DIR; };
+		4F4E9B5AC7320FA9A4CA45DDA84C3873 /* GGPermissionMicrophoneRequest.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = GGPermissionMicrophoneRequest.m; path = GGPermission/Classes/Microphone/GGPermissionMicrophoneRequest.m; sourceTree = "<group>"; };
+		4F880BFDBD31A6DDD7B873D3C9610A54 /* GGPermissionCalendarHandler.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = GGPermissionCalendarHandler.m; path = GGPermission/Classes/Calendar/GGPermissionCalendarHandler.m; sourceTree = "<group>"; };
+		589CFF675B3947B56C873FE1D0E9E98E /* GGPermissionDefine.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = GGPermissionDefine.h; path = GGPermission/Classes/Core/GGPermissionDefine.h; sourceTree = "<group>"; };
 		61B8C95180D15741DCA329C8D5331B55 /* GGWindowDefine.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = GGWindowDefine.m; path = GGWindowManager/Classes/GGWindowDefine.m; sourceTree = "<group>"; };
-		63E3C53FA50BA370D74B805F8D5F1415 /* GGPermissionLocationHelper.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = GGPermissionLocationHelper.h; path = GGPermission/Classes/Location/GGPermissionLocationHelper.h; sourceTree = "<group>"; };
-		6D80E072A3587CF4378B6A28AABE0D93 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS26.0.sdk/System/Library/Frameworks/CoreLocation.framework; sourceTree = DEVELOPER_DIR; };
+		62C035E6109E174BA32D6643D5BD999B /* GGPermissionUIHelper.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = GGPermissionUIHelper.h; path = GGPermission/Classes/Core/GGPermissionUIHelper.h; sourceTree = "<group>"; };
+		69F3CED7779695464C1A1DBE3E6D2A12 /* GGPermissionLocationHandler.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = GGPermissionLocationHandler.h; path = GGPermission/Classes/Location/GGPermissionLocationHandler.h; sourceTree = "<group>"; };
+		6A4FF3D55B8016D207F0F11EEB7F3CA8 /* GGPermissionNotificationRequest.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = GGPermissionNotificationRequest.h; path = GGPermission/Classes/Notification/GGPermissionNotificationRequest.h; sourceTree = "<group>"; };
 		709A1AC0A647C5172746C76AEDBE9376 /* Pods-GGPermission_Tests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-GGPermission_Tests-acknowledgements.plist"; sourceTree = "<group>"; };
-		73FB36078A83940ECD3C7931A3C6A63B /* GGPermissionCalendarHandler.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = GGPermissionCalendarHandler.m; path = GGPermission/Classes/Calendar/GGPermissionCalendarHandler.m; sourceTree = "<group>"; };
-		75CEF46C54614353B26F96DE49F31997 /* GGPermissionNotificationHandler.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = GGPermissionNotificationHandler.m; path = GGPermission/Classes/Notification/GGPermissionNotificationHandler.m; sourceTree = "<group>"; };
-		7830A11A52025B22447104B2383005C4 /* GGPermissionPhotoRequest.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = GGPermissionPhotoRequest.h; path = GGPermission/Classes/Photo/GGPermissionPhotoRequest.h; sourceTree = "<group>"; };
+		718A41062BFCAACB3496ED579B7642D7 /* GGPermissionPhotoHandler.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = GGPermissionPhotoHandler.m; path = GGPermission/Classes/Photo/GGPermissionPhotoHandler.m; sourceTree = "<group>"; };
+		721E8E1A1A213BAA826321A3BC9B0335 /* EventKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = EventKit.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS26.0.sdk/System/Library/Frameworks/EventKit.framework; sourceTree = DEVELOPER_DIR; };
+		74E708206574B6B83018505CA7FE69CB /* GGPermissionMicrophoneHandler.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = GGPermissionMicrophoneHandler.h; path = GGPermission/Classes/Microphone/GGPermissionMicrophoneHandler.h; sourceTree = "<group>"; };
+		75B083F30C426A3282E5EFC1B4DF4F99 /* UIViewController+GGPermission.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIViewController+GGPermission.m"; path = "GGPermission/Classes/Core/UIViewController+GGPermission.m"; sourceTree = "<group>"; };
+		78B1AF1F50D7A95ECD65D807A4E64D65 /* GGPermissionLogger.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = GGPermissionLogger.m; path = GGPermission/Classes/Core/GGPermissionLogger.m; sourceTree = "<group>"; };
 		79096D0F2A161510F686B189DDB22C9E /* UIWindow+GG.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIWindow+GG.m"; path = "GGWindowManager/Classes/UIWindow+GG.m"; sourceTree = "<group>"; };
-		79CE8E6D5F38654BB736999D2B4E833F /* GGPermissionCameraRequest.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = GGPermissionCameraRequest.h; path = GGPermission/Classes/Camera/GGPermissionCameraRequest.h; sourceTree = "<group>"; };
-		7A1529A3D122FEC91898CC4128C9AA39 /* GGPermissionUIHelper.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = GGPermissionUIHelper.h; path = GGPermission/Classes/Core/GGPermissionUIHelper.h; sourceTree = "<group>"; };
-		835D2A3716EA77663F84EA642F0A720C /* GGPermission-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "GGPermission-Info.plist"; sourceTree = "<group>"; };
-		8991280476A729B003D20CC250DDA54C /* GGPermissionBluetoothRequest.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = GGPermissionBluetoothRequest.h; path = GGPermission/Classes/Bluetooth/GGPermissionBluetoothRequest.h; sourceTree = "<group>"; };
-		8A7F722BA91144A6B94300194D3A9E20 /* GGPermission.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = GGPermission.m; path = GGPermission/Classes/Core/GGPermission.m; sourceTree = "<group>"; };
+		7DFD6A9B602AEF7D16351376BBD758BC /* GGPermissionHealthRequest.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = GGPermissionHealthRequest.h; path = GGPermission/Classes/Health/GGPermissionHealthRequest.h; sourceTree = "<group>"; };
+		82DCD8008A73D61D1BCB98B278271673 /* GGPermissionLocationHandler.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = GGPermissionLocationHandler.m; path = GGPermission/Classes/Location/GGPermissionLocationHandler.m; sourceTree = "<group>"; };
+		835C30C39BA2DD1551E50E92696EDFD0 /* GGPermissionLoggerMacros.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = GGPermissionLoggerMacros.m; path = GGPermission/Classes/Core/GGPermissionLoggerMacros.m; sourceTree = "<group>"; };
+		847AE635A2B0D9A681C4AD5F78407EC2 /* GGPermissionCameraRequest.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = GGPermissionCameraRequest.h; path = GGPermission/Classes/Camera/GGPermissionCameraRequest.h; sourceTree = "<group>"; };
+		86C0FB70215C80C4391EFB076A33758A /* GGPermissionPhotoHandler.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = GGPermissionPhotoHandler.h; path = GGPermission/Classes/Photo/GGPermissionPhotoHandler.h; sourceTree = "<group>"; };
+		873F996A4DB476B2B6AD04B813780C6A /* GGPermission.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = GGPermission.modulemap; sourceTree = "<group>"; };
+		8797E20B92BD0372F96DE98E38F0FCBA /* GGPermissionCalendarHandler.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = GGPermissionCalendarHandler.h; path = GGPermission/Classes/Calendar/GGPermissionCalendarHandler.h; sourceTree = "<group>"; };
 		8DD8AA5A9700621447C047C7FBAB056A /* Pods-GGPermission_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-GGPermission_Tests.debug.xcconfig"; sourceTree = "<group>"; };
 		8E850E1543068762C5D48CBF3A554862 /* GGWindowLogHelper.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = GGWindowLogHelper.h; path = GGWindowManager/Classes/GGWindowLogHelper.h; sourceTree = "<group>"; };
-		8FA96351F974DF11C2BE1BE7DE779424 /* GGPermissionUIHelper.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = GGPermissionUIHelper.m; path = GGPermission/Classes/Core/GGPermissionUIHelper.m; sourceTree = "<group>"; };
 		8FE46D0A188AE47BCA5D4F5871E0E387 /* GGWindowManager-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "GGWindowManager-dummy.m"; sourceTree = "<group>"; };
-		8FE6D4038C46AFA516F837081DB9BFEC /* GGPermissionContactsHandler.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = GGPermissionContactsHandler.m; path = GGPermission/Classes/Contacts/GGPermissionContactsHandler.m; sourceTree = "<group>"; };
-		909C207CBC23AC516E95C76C049D3575 /* GGPermissionTask.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = GGPermissionTask.h; path = GGPermission/Classes/Core/GGPermissionTask.h; sourceTree = "<group>"; };
+		9062E9ACB54A4FF894C943D89A9AE87D /* GGPermissionContactsHandler.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = GGPermissionContactsHandler.h; path = GGPermission/Classes/Contacts/GGPermissionContactsHandler.h; sourceTree = "<group>"; };
+		937D49235F42DB2F1A5A28B9C272036F /* UserNotifications.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UserNotifications.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS26.0.sdk/System/Library/Frameworks/UserNotifications.framework; sourceTree = DEVELOPER_DIR; };
 		95B20B430D9F40767EBEC061687CDFC8 /* GGWindowManager */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = GGWindowManager; path = GGWindowManager.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		978D6E2F8AE7FF55AD95DCA0094E61A9 /* GGPermissionCalendarRequest.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = GGPermissionCalendarRequest.m; path = GGPermission/Classes/Calendar/GGPermissionCalendarRequest.m; sourceTree = "<group>"; };
 		98AFCEFF1E48FA3350F62AEE7EC679C5 /* GGWindowManager.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = GGWindowManager.h; path = GGWindowManager/Classes/GGWindowManager.h; sourceTree = "<group>"; };
-		9989DB8F86AC861731023F2E5A814360 /* GGPermissionContactsRequest.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = GGPermissionContactsRequest.m; path = GGPermission/Classes/Contacts/GGPermissionContactsRequest.m; sourceTree = "<group>"; };
+		99C5A4D817F6DF8F6AF7231743B5B894 /* GGPermission.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = GGPermission.debug.xcconfig; sourceTree = "<group>"; };
+		9D49F91331AAE3032D6BE2F35C406D78 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS26.0.sdk/System/Library/Frameworks/UIKit.framework; sourceTree = DEVELOPER_DIR; };
 		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
-		9FEB71869D5E62E39B1D9A21B80DA8FA /* GGPermissionLogger.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = GGPermissionLogger.m; path = GGPermission/Classes/Core/GGPermissionLogger.m; sourceTree = "<group>"; };
-		A14ABC4FCE398CC1605267263C52DA4D /* GGPermissionBaseHandler.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = GGPermissionBaseHandler.h; path = GGPermission/Classes/Core/GGPermissionBaseHandler.h; sourceTree = "<group>"; };
-		A183B02F9D71A04BC13B0B576D174AA7 /* GGPermission-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "GGPermission-prefix.pch"; sourceTree = "<group>"; };
-		A1BD30CC73EE29C3938DDF0C6D43B345 /* GGPermissionCalendarRequest.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = GGPermissionCalendarRequest.h; path = GGPermission/Classes/Calendar/GGPermissionCalendarRequest.h; sourceTree = "<group>"; };
-		A565FE1FA893C4CE336E70BC23324EC1 /* GGPermissionLoggerMacros.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = GGPermissionLoggerMacros.h; path = GGPermission/Classes/Core/GGPermissionLoggerMacros.h; sourceTree = "<group>"; };
+		A01C10C4B743CDAC6F5D71EB65F7D2B4 /* GGPermission.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = GGPermission.m; path = GGPermission/Classes/Core/GGPermission.m; sourceTree = "<group>"; };
+		A1368A9EC6514962A57A451FE7FB117E /* GGPermissionCalendarRequest.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = GGPermissionCalendarRequest.h; path = GGPermission/Classes/Calendar/GGPermissionCalendarRequest.h; sourceTree = "<group>"; };
 		A57F207C832E1EA7FDF356DC6FEFA991 /* Pods-GGPermission_Example-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-GGPermission_Example-acknowledgements.markdown"; sourceTree = "<group>"; };
-		A591A4229601B7AB55C2AEB704769B96 /* GGPermissionMicrophoneHandler.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = GGPermissionMicrophoneHandler.h; path = GGPermission/Classes/Microphone/GGPermissionMicrophoneHandler.h; sourceTree = "<group>"; };
-		A63F02065F77CC1CE0233D37F2DA77D8 /* GGPermissionMicrophoneRequest.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = GGPermissionMicrophoneRequest.h; path = GGPermission/Classes/Microphone/GGPermissionMicrophoneRequest.h; sourceTree = "<group>"; };
-		A70405B11189D416E108469C49F23161 /* GGPermission.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; path = GGPermission.podspec; sourceTree = "<group>"; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		A60FFB809A5A51B1209DB47AB3D4EB51 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; path = README.md; sourceTree = "<group>"; };
+		A61F323C0C275947C6E896FBF5CD7FD9 /* GGPermissionCameraHandler.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = GGPermissionCameraHandler.m; path = GGPermission/Classes/Camera/GGPermissionCameraHandler.m; sourceTree = "<group>"; };
+		A84D43C0C77DC86C4CB6609F8A8BC32E /* GGPermission-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "GGPermission-prefix.pch"; sourceTree = "<group>"; };
 		AA62E12055E0432828A1FC00FFBDCB7D /* GGWindowManager-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "GGWindowManager-Info.plist"; sourceTree = "<group>"; };
-		B151EB17201C797DD221A30BE89CD75F /* GGPermissionCameraHandler.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = GGPermissionCameraHandler.m; path = GGPermission/Classes/Camera/GGPermissionCameraHandler.m; sourceTree = "<group>"; };
-		B44FB5379E49054C5A638D3D6F3417D2 /* GGPermissionCalendarRequest.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = GGPermissionCalendarRequest.m; path = GGPermission/Classes/Calendar/GGPermissionCalendarRequest.m; sourceTree = "<group>"; };
-		B68A01658534B1745AF2442F69EFE3AE /* UIViewController+GGPermission.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIViewController+GGPermission.m"; path = "GGPermission/Classes/Core/UIViewController+GGPermission.m"; sourceTree = "<group>"; };
+		AE255789CA111F647729B1EABA50F714 /* GGPermissionMicrophoneHandler.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = GGPermissionMicrophoneHandler.m; path = GGPermission/Classes/Microphone/GGPermissionMicrophoneHandler.m; sourceTree = "<group>"; };
+		B4A289D5FAC3E2E182664A191038E799 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS26.0.sdk/System/Library/Frameworks/AVFoundation.framework; sourceTree = DEVELOPER_DIR; };
+		B640A75770108523C9F0BF5397A5967D /* GGPermissionCameraHandler.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = GGPermissionCameraHandler.h; path = GGPermission/Classes/Camera/GGPermissionCameraHandler.h; sourceTree = "<group>"; };
 		B71A0BFDCE26F052480CEB0A3540AC1A /* Pods-GGPermission_Tests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-GGPermission_Tests-umbrella.h"; sourceTree = "<group>"; };
-		BA6DC7AB835ABB8E379656583ED97451 /* GGPermissionLocationHandler.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = GGPermissionLocationHandler.h; path = GGPermission/Classes/Location/GGPermissionLocationHandler.h; sourceTree = "<group>"; };
-		BD0284A801D95DA71D77C9D0CDDC773E /* GGPermission-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "GGPermission-dummy.m"; sourceTree = "<group>"; };
+		BCC54FB932EFBB7F8DD222C92C395EFE /* GGPermissionCameraRequest.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = GGPermissionCameraRequest.m; path = GGPermission/Classes/Camera/GGPermissionCameraRequest.m; sourceTree = "<group>"; };
 		BFFAF144E360CEFE70709D188F7A891A /* UIWindow+GG.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIWindow+GG.h"; path = "GGWindowManager/Classes/UIWindow+GG.h"; sourceTree = "<group>"; };
-		C08F38B12F4731BA552AB84EE18C4294 /* CoreBluetooth.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreBluetooth.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS26.0.sdk/System/Library/Frameworks/CoreBluetooth.framework; sourceTree = DEVELOPER_DIR; };
+		C00A1B58B537B0A1C1FA3A5731E0D934 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; path = LICENSE; sourceTree = "<group>"; };
+		C0499814EB228CFEEA2CDE5580F399BC /* GGPermission-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "GGPermission-Info.plist"; sourceTree = "<group>"; };
+		C10808C35B8E38EFE4CF8B3DFC27D728 /* GGPermissionHealthHandler.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = GGPermissionHealthHandler.h; path = GGPermission/Classes/Health/GGPermissionHealthHandler.h; sourceTree = "<group>"; };
 		C1EB432D15FEB0C9927FFD162EE4DC4D /* GGWindowManager.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = GGWindowManager.release.xcconfig; sourceTree = "<group>"; };
-		C349675C597D825F5F74AD7FFCA96922 /* GGPermissionMicrophoneHandler.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = GGPermissionMicrophoneHandler.m; path = GGPermission/Classes/Microphone/GGPermissionMicrophoneHandler.m; sourceTree = "<group>"; };
+		C29DCB6F4CE46356552366112F3E85E7 /* GGPermissionBaseHandler.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = GGPermissionBaseHandler.m; path = GGPermission/Classes/Core/GGPermissionBaseHandler.m; sourceTree = "<group>"; };
 		C45BE75F6F4B6FE9BF02CC6601258D66 /* Pods-GGPermission_Example */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = "Pods-GGPermission_Example"; path = Pods_GGPermission_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		C6720D6AB9071FEE957A955F620BF369 /* GGPermissionNotificationRequest.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = GGPermissionNotificationRequest.m; path = GGPermission/Classes/Notification/GGPermissionNotificationRequest.m; sourceTree = "<group>"; };
-		C93941763A86A4B86A06DE49FBBCE795 /* Contacts.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Contacts.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS26.0.sdk/System/Library/Frameworks/Contacts.framework; sourceTree = DEVELOPER_DIR; };
-		CBFB786410A7FCAAF0DFFBF6A9EC473A /* GGPermissionTask.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = GGPermissionTask.m; path = GGPermission/Classes/Core/GGPermissionTask.m; sourceTree = "<group>"; };
+		C59E4F6FB771DBAED01361E79BC177B4 /* Contacts.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Contacts.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS26.0.sdk/System/Library/Frameworks/Contacts.framework; sourceTree = DEVELOPER_DIR; };
+		CBAE19F28C3BA8A82BB01E3A6D9D4D1D /* GGPermission-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "GGPermission-umbrella.h"; sourceTree = "<group>"; };
 		CDC42EB0888226C28F590A1030364490 /* Pods-GGPermission_Example-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-GGPermission_Example-acknowledgements.plist"; sourceTree = "<group>"; };
 		D3D93BD48E791D21935E0092C3C0F6AA /* GGWindowManager-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "GGWindowManager-prefix.pch"; sourceTree = "<group>"; };
-		D60EFF3291928B68213EF5DC54B0D1FE /* GGPermissionHealthRequest.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = GGPermissionHealthRequest.h; path = GGPermission/Classes/Health/GGPermissionHealthRequest.h; sourceTree = "<group>"; };
+		D6545869A1A9F380608735961D7365BF /* GGPermissionPhotoRequest.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = GGPermissionPhotoRequest.m; path = GGPermission/Classes/Photo/GGPermissionPhotoRequest.m; sourceTree = "<group>"; };
+		D751876DAFB52E92509612D5497F9A3A /* GGPermissionContactsRequest.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = GGPermissionContactsRequest.h; path = GGPermission/Classes/Contacts/GGPermissionContactsRequest.h; sourceTree = "<group>"; };
 		D868BAF5EA6E86D12288E2621AE4CCED /* GGWindowManager.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = GGWindowManager.modulemap; sourceTree = "<group>"; };
+		D9845BE4B4BFB09E4694BC20337F8F13 /* GGPermissionNotificationHandler.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = GGPermissionNotificationHandler.m; path = GGPermission/Classes/Notification/GGPermissionNotificationHandler.m; sourceTree = "<group>"; };
 		DBF59DFF4A2CD326AA97C38D3225063F /* Pods-GGPermission_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-GGPermission_Example.debug.xcconfig"; sourceTree = "<group>"; };
-		DE1374C2CB119E2FED0DB53C28B5CD2C /* GGPermissionPhotoRequest.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = GGPermissionPhotoRequest.m; path = GGPermission/Classes/Photo/GGPermissionPhotoRequest.m; sourceTree = "<group>"; };
-		DE42AFE605BC96AFF39DB8AE11D3DC00 /* GGPermissionCameraRequest.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = GGPermissionCameraRequest.m; path = GGPermission/Classes/Camera/GGPermissionCameraRequest.m; sourceTree = "<group>"; };
-		E280C5AF711B73E0F9D55E80EB4DA19C /* GGPermissionBluetoothHandler.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = GGPermissionBluetoothHandler.m; path = GGPermission/Classes/Bluetooth/GGPermissionBluetoothHandler.m; sourceTree = "<group>"; };
-		E66464380F3BA9142A87C4756AA31FB6 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS26.0.sdk/System/Library/Frameworks/AVFoundation.framework; sourceTree = DEVELOPER_DIR; };
-		EA5ADE4AADDC9B6FB689A9FA1B0D2269 /* GGPermissionLogger.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = GGPermissionLogger.h; path = GGPermission/Classes/Core/GGPermissionLogger.h; sourceTree = "<group>"; };
+		DCA514536BCE4877EB38C6375AF48A0B /* GGPermissionHealthRequest.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = GGPermissionHealthRequest.m; path = GGPermission/Classes/Health/GGPermissionHealthRequest.m; sourceTree = "<group>"; };
+		DD53F7F133C8CD1CF6B46CAE33789935 /* GGPermissionBaseRequest.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = GGPermissionBaseRequest.h; path = GGPermission/Classes/Core/GGPermissionBaseRequest.h; sourceTree = "<group>"; };
+		E1C6203A7492C1DABDE347FCA6398042 /* GGPermissionLocationHelper.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = GGPermissionLocationHelper.m; path = GGPermission/Classes/Location/GGPermissionLocationHelper.m; sourceTree = "<group>"; };
+		E430AD8658C61E1E5894AA3C05B74C61 /* GGPermission-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "GGPermission-dummy.m"; sourceTree = "<group>"; };
+		E44A001EE7A524EC27FAAFF484EA7DA1 /* GGPermissionBaseRequest.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = GGPermissionBaseRequest.m; path = GGPermission/Classes/Core/GGPermissionBaseRequest.m; sourceTree = "<group>"; };
+		EAC1AB79FE65D420131039268A8E1C96 /* GGPermissionProtocol.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = GGPermissionProtocol.h; path = GGPermission/Classes/Core/GGPermissionProtocol.h; sourceTree = "<group>"; };
 		EB9C8D59CDCC90EB83E7F5C7001C3EB1 /* Pods-GGPermission_Tests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-GGPermission_Tests.modulemap"; sourceTree = "<group>"; };
-		ED7DFFF77D45330DA3B5C98D64C86F81 /* GGPermissionCameraHandler.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = GGPermissionCameraHandler.h; path = GGPermission/Classes/Camera/GGPermissionCameraHandler.h; sourceTree = "<group>"; };
-		EF02D54DBF8101C9433593172A24512F /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; path = README.md; sourceTree = "<group>"; };
-		F277CA1C4F4F9A0938BC212FCFB25C63 /* UIViewController+GGPermission.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIViewController+GGPermission.h"; path = "GGPermission/Classes/Core/UIViewController+GGPermission.h"; sourceTree = "<group>"; };
-		F37A4CF26711CECE09C08BCDB9EDB88B /* GGPermissionHealthHandler.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = GGPermissionHealthHandler.h; path = GGPermission/Classes/Health/GGPermissionHealthHandler.h; sourceTree = "<group>"; };
+		F3E70178F2A81DAC2E95FD4C71D82487 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS26.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
 		F40C6CABEBAE046B7A7EA0D32C46477E /* GGWindowLogHelper.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = GGWindowLogHelper.m; path = GGWindowManager/Classes/GGWindowLogHelper.m; sourceTree = "<group>"; };
-		F464A760E8B3D91E7DC53F3DA96DF37C /* GGPermissionBaseRequest.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = GGPermissionBaseRequest.m; path = GGPermission/Classes/Core/GGPermissionBaseRequest.m; sourceTree = "<group>"; };
-		F4A3A8AB206A5856D8DD64497F73925B /* Photos.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Photos.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS26.0.sdk/System/Library/Frameworks/Photos.framework; sourceTree = DEVELOPER_DIR; };
 		F76D397D5B0A8CC6D98709CC39441834 /* Pods-GGPermission_Tests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-GGPermission_Tests-dummy.m"; sourceTree = "<group>"; };
-		F981D1D95E1B71B9839E673C8C167295 /* GGPermission.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = GGPermission.h; path = GGPermission/Classes/Core/GGPermission.h; sourceTree = "<group>"; };
-		FE41A209D0659531CC0E043516C0D0B1 /* GGPermission-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "GGPermission-umbrella.h"; sourceTree = "<group>"; };
-		FF59594A06F6BEE96772BECBD3CC9EB4 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS26.0.sdk/System/Library/Frameworks/UIKit.framework; sourceTree = DEVELOPER_DIR; };
+		F9B2455078C43E35ADCF35AFD458A411 /* GGPermissionTask.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = GGPermissionTask.h; path = GGPermission/Classes/Core/GGPermissionTask.h; sourceTree = "<group>"; };
+		FACB0ED91D71ADFC69F61C8EB8FF222D /* GGPermissionTask.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = GGPermissionTask.m; path = GGPermission/Classes/Core/GGPermissionTask.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		1939026349814857662413BD9D425FFD /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				B3E14F7D3A5F6C7E25AE3ADD60E9E33D /* AVFoundation.framework in Frameworks */,
-				86E63E3E9D5D44CE64C975D3E55253A2 /* Contacts.framework in Frameworks */,
-				6620687938E6AF8E698E5DC85CF536A9 /* CoreBluetooth.framework in Frameworks */,
-				5E87E32120543CD96416C984B7CE485A /* CoreLocation.framework in Frameworks */,
-				BC39377D8BEBBC66F5D8B8906E892DD3 /* EventKit.framework in Frameworks */,
-				F48F8BE12D572D10B2DCE4FEC3DE3598 /* Foundation.framework in Frameworks */,
-				1036BD73794653E0363D21A867FC11D1 /* HealthKit.framework in Frameworks */,
-				7D6C2E7EE91BCAF465CA0C33DF14F166 /* Photos.framework in Frameworks */,
-				21B7A9994F4F162A0E6926B1FE8343B3 /* UIKit.framework in Frameworks */,
-				076B845AA6E21D74C28563D0D389696E /* UserNotifications.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 		1F2B879A79701960B988B86504DD5D47 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				DCE9248F95F479B01B17A14FEDD6D60C /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		482F39F0AB65701957B7EAF808D693E7 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				506DB1C2952BEA7CDCCBA2B2277A2DE8 /* AVFoundation.framework in Frameworks */,
+				8957E64FD467734F60789742090E985E /* Contacts.framework in Frameworks */,
+				89D1DD7AB13D41B36CE32CC79E2A9021 /* CoreLocation.framework in Frameworks */,
+				E3D02C1CCCFA794E547E4029257DC504 /* EventKit.framework in Frameworks */,
+				455D8D7F228A307C459A690C68BC2C25 /* Foundation.framework in Frameworks */,
+				84A26E5E9CC06C85ED7BBC7D150029D2 /* HealthKit.framework in Frameworks */,
+				6870F8B7A38243BEFA4BF73C69066F32 /* Photos.framework in Frameworks */,
+				EEEE4E81C437B79EF163097E81973ECB /* UIKit.framework in Frameworks */,
+				405C686E3FBFE7C6AB446E609D7CC239 /* UserNotifications.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6BF88B9297061FCD8559EABD75436E0C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BAB9317176284438C7FDA09274084F60 /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -275,109 +272,48 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		DB857BB1DCC3D5C3E7BBCE80AD416078 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				75663E230CA8747A163270D6502158A7 /* Foundation.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		02751C82997A7E384C929956D116D3F4 /* Notification */ = {
+		0656CE04288357F0748AB498835BA03E /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				20330824D5A0805B0A6FA76B250BC67A /* GGPermissionNotificationHandler.h */,
-				75CEF46C54614353B26F96DE49F31997 /* GGPermissionNotificationHandler.m */,
-				52DC1AD7C371B6C70B7A81C437679A6C /* GGPermissionNotificationRequest.h */,
-				C6720D6AB9071FEE957A955F620BF369 /* GGPermissionNotificationRequest.m */,
-			);
-			name = Notification;
-			sourceTree = "<group>";
-		};
-		15C17AAD28986190E5A29085E3A9D88C /* Core */ = {
-			isa = PBXGroup;
-			children = (
-				F981D1D95E1B71B9839E673C8C167295 /* GGPermission.h */,
-				8A7F722BA91144A6B94300194D3A9E20 /* GGPermission.m */,
-				A14ABC4FCE398CC1605267263C52DA4D /* GGPermissionBaseHandler.h */,
-				01ECCA8CD110F2BE4A6799CE8BD1D386 /* GGPermissionBaseHandler.m */,
-				518AE68AAC0B6755B0C4FEF6CD7E88D9 /* GGPermissionBaseRequest.h */,
-				F464A760E8B3D91E7DC53F3DA96DF37C /* GGPermissionBaseRequest.m */,
-				34F225CE6A42193C809EF8950C353CAD /* GGPermissionDefine.h */,
-				EA5ADE4AADDC9B6FB689A9FA1B0D2269 /* GGPermissionLogger.h */,
-				9FEB71869D5E62E39B1D9A21B80DA8FA /* GGPermissionLogger.m */,
-				A565FE1FA893C4CE336E70BC23324EC1 /* GGPermissionLoggerMacros.h */,
-				2B2F57A728A9A05CD3B3C665231FD820 /* GGPermissionLoggerMacros.m */,
-				4D79F4BDB9A60EE340AB429F27D68ECD /* GGPermissionProtocol.h */,
-				909C207CBC23AC516E95C76C049D3575 /* GGPermissionTask.h */,
-				CBFB786410A7FCAAF0DFFBF6A9EC473A /* GGPermissionTask.m */,
-				7A1529A3D122FEC91898CC4128C9AA39 /* GGPermissionUIHelper.h */,
-				8FA96351F974DF11C2BE1BE7DE779424 /* GGPermissionUIHelper.m */,
-				F277CA1C4F4F9A0938BC212FCFB25C63 /* UIViewController+GGPermission.h */,
-				B68A01658534B1745AF2442F69EFE3AE /* UIViewController+GGPermission.m */,
-			);
-			name = Core;
-			sourceTree = "<group>";
-		};
-		202A27375541F2D4F3ABF1F10CBD5F5D /* Development Pods */ = {
-			isa = PBXGroup;
-			children = (
-				2FA6C4FE71799F5BF9DA7B540C91313F /* GGPermission */,
-			);
-			name = "Development Pods";
-			sourceTree = "<group>";
-		};
-		248587D7986B7255EB8CB4FA5C9E5DC6 /* Contacts */ = {
-			isa = PBXGroup;
-			children = (
-				1BAAB6AF798F6C427515B7E57A41479A /* GGPermissionContactsHandler.h */,
-				8FE6D4038C46AFA516F837081DB9BFEC /* GGPermissionContactsHandler.m */,
-				3FAB9AB573C18040935193385357CB97 /* GGPermissionContactsRequest.h */,
-				9989DB8F86AC861731023F2E5A814360 /* GGPermissionContactsRequest.m */,
-			);
-			name = Contacts;
-			sourceTree = "<group>";
-		};
-		2835008FC96A660E06D6E267362F7AC5 /* Photo */ = {
-			isa = PBXGroup;
-			children = (
-				0D0AB322289C1111B8FFFE0189CC9A83 /* GGPermissionPhotoHandler.h */,
-				238A2DC93DB79A16D66E8D62D247CEF5 /* GGPermissionPhotoHandler.m */,
-				7830A11A52025B22447104B2383005C4 /* GGPermissionPhotoRequest.h */,
-				DE1374C2CB119E2FED0DB53C28B5CD2C /* GGPermissionPhotoRequest.m */,
-			);
-			name = Photo;
-			sourceTree = "<group>";
-		};
-		2FA6C4FE71799F5BF9DA7B540C91313F /* GGPermission */ = {
-			isa = PBXGroup;
-			children = (
-				925B78595783204E9F789B87CCB649DA /* Bluetooth */,
-				4F3B1E2AAEC4E736D7995B2CCAD12144 /* Calendar */,
-				7CEB0B98D85E9929411285B455E95A19 /* Camera */,
-				248587D7986B7255EB8CB4FA5C9E5DC6 /* Contacts */,
-				15C17AAD28986190E5A29085E3A9D88C /* Core */,
-				66C1F6AEF7F1BF7EE893510B565974DE /* Health */,
-				BB400FD5F7F5B7A311665A896AF66F31 /* Location */,
-				94920E8BD69D08A761B6048C4E85554A /* Microphone */,
-				02751C82997A7E384C929956D116D3F4 /* Notification */,
-				2835008FC96A660E06D6E267362F7AC5 /* Photo */,
-				5E9C534DF1920F557B9688F3D32F1440 /* Pod */,
-				F3E766816E9680531585B92D4F09D270 /* Support Files */,
-			);
-			name = GGPermission;
-			path = ../..;
-			sourceTree = "<group>";
-		};
-		2FE445AD883B9ABD3E0241A05A5B79FD /* Frameworks */ = {
-			isa = PBXGroup;
-			children = (
-				68C8F592FFF6EB040617C737C9CC8421 /* iOS */,
+				6246668BE085E0DC9B83D782109E097C /* iOS */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		19EF2E597FD2E84A58836278E223BCD0 /* Calendar */ = {
+			isa = PBXGroup;
+			children = (
+				8797E20B92BD0372F96DE98E38F0FCBA /* GGPermissionCalendarHandler.h */,
+				4F880BFDBD31A6DDD7B873D3C9610A54 /* GGPermissionCalendarHandler.m */,
+				A1368A9EC6514962A57A451FE7FB117E /* GGPermissionCalendarRequest.h */,
+				978D6E2F8AE7FF55AD95DCA0094E61A9 /* GGPermissionCalendarRequest.m */,
+			);
+			name = Calendar;
+			sourceTree = "<group>";
+		};
+		1B5B0490B255E5C6B4221711463D24FE /* Microphone */ = {
+			isa = PBXGroup;
+			children = (
+				74E708206574B6B83018505CA7FE69CB /* GGPermissionMicrophoneHandler.h */,
+				AE255789CA111F647729B1EABA50F714 /* GGPermissionMicrophoneHandler.m */,
+				487F075C606414EF7EECAD3A43105D35 /* GGPermissionMicrophoneRequest.h */,
+				4F4E9B5AC7320FA9A4CA45DDA84C3873 /* GGPermissionMicrophoneRequest.m */,
+			);
+			name = Microphone;
+			sourceTree = "<group>";
+		};
+		2ABCE1FE98E715CC5BF289909E1A886C /* Photo */ = {
+			isa = PBXGroup;
+			children = (
+				86C0FB70215C80C4391EFB076A33758A /* GGPermissionPhotoHandler.h */,
+				718A41062BFCAACB3496ED579B7642D7 /* GGPermissionPhotoHandler.m */,
+				042CB9A0C4D7B0C6B6D8CD0EFA0596CD /* GGPermissionPhotoRequest.h */,
+				D6545869A1A9F380608735961D7365BF /* GGPermissionPhotoRequest.m */,
+			);
+			name = Photo;
 			sourceTree = "<group>";
 		};
 		452B6F5E34B50D524F04F6EAED1B71A6 /* Products */ = {
@@ -400,86 +336,65 @@
 			name = "Targets Support Files";
 			sourceTree = "<group>";
 		};
-		4F3B1E2AAEC4E736D7995B2CCAD12144 /* Calendar */ = {
+		5CF861D9F9CE6D9773169B00F241D6F4 /* Contacts */ = {
 			isa = PBXGroup;
 			children = (
-				506244F6E220A2A788076E2A37A50321 /* GGPermissionCalendarHandler.h */,
-				73FB36078A83940ECD3C7931A3C6A63B /* GGPermissionCalendarHandler.m */,
-				A1BD30CC73EE29C3938DDF0C6D43B345 /* GGPermissionCalendarRequest.h */,
-				B44FB5379E49054C5A638D3D6F3417D2 /* GGPermissionCalendarRequest.m */,
+				9062E9ACB54A4FF894C943D89A9AE87D /* GGPermissionContactsHandler.h */,
+				2EAA31F884EEB0F577D4781C93D7DFDB /* GGPermissionContactsHandler.m */,
+				D751876DAFB52E92509612D5497F9A3A /* GGPermissionContactsRequest.h */,
+				03382016359125C198F8CAD3F548D7C3 /* GGPermissionContactsRequest.m */,
 			);
-			name = Calendar;
+			name = Contacts;
 			sourceTree = "<group>";
 		};
-		5E9C534DF1920F557B9688F3D32F1440 /* Pod */ = {
+		6246668BE085E0DC9B83D782109E097C /* iOS */ = {
 			isa = PBXGroup;
 			children = (
-				A70405B11189D416E108469C49F23161 /* GGPermission.podspec */,
-				1E7AAF61BE435EE0B3F1D31C256B3AA6 /* LICENSE */,
-				EF02D54DBF8101C9433593172A24512F /* README.md */,
-			);
-			name = Pod;
-			sourceTree = "<group>";
-		};
-		66C1F6AEF7F1BF7EE893510B565974DE /* Health */ = {
-			isa = PBXGroup;
-			children = (
-				F37A4CF26711CECE09C08BCDB9EDB88B /* GGPermissionHealthHandler.h */,
-				1009F248717A1881D7614F2C87FC90D4 /* GGPermissionHealthHandler.m */,
-				D60EFF3291928B68213EF5DC54B0D1FE /* GGPermissionHealthRequest.h */,
-				3E3DEA915125546DFEAF56DA8113FBE7 /* GGPermissionHealthRequest.m */,
-			);
-			name = Health;
-			sourceTree = "<group>";
-		};
-		68C8F592FFF6EB040617C737C9CC8421 /* iOS */ = {
-			isa = PBXGroup;
-			children = (
-				E66464380F3BA9142A87C4756AA31FB6 /* AVFoundation.framework */,
-				C93941763A86A4B86A06DE49FBBCE795 /* Contacts.framework */,
-				C08F38B12F4731BA552AB84EE18C4294 /* CoreBluetooth.framework */,
-				6D80E072A3587CF4378B6A28AABE0D93 /* CoreLocation.framework */,
-				5E5CA7E4F69180791F3D7864EBC472B5 /* EventKit.framework */,
-				3A637C274723110ADCA790BF3B1DD355 /* Foundation.framework */,
-				293D395B8E1D5AA9603717A983F3D746 /* HealthKit.framework */,
-				F4A3A8AB206A5856D8DD64497F73925B /* Photos.framework */,
-				FF59594A06F6BEE96772BECBD3CC9EB4 /* UIKit.framework */,
-				379B264394C7871488068EE10AD48EE8 /* UserNotifications.framework */,
+				B4A289D5FAC3E2E182664A191038E799 /* AVFoundation.framework */,
+				C59E4F6FB771DBAED01361E79BC177B4 /* Contacts.framework */,
+				1D551E0476CE3DE342E330764215505F /* CoreLocation.framework */,
+				721E8E1A1A213BAA826321A3BC9B0335 /* EventKit.framework */,
+				F3E70178F2A81DAC2E95FD4C71D82487 /* Foundation.framework */,
+				4BB8754AB408007D75A024DAD64E8532 /* HealthKit.framework */,
+				09E1AD3A65EF302506FE2BCE6E134F9B /* Photos.framework */,
+				9D49F91331AAE3032D6BE2F35C406D78 /* UIKit.framework */,
+				937D49235F42DB2F1A5A28B9C272036F /* UserNotifications.framework */,
 			);
 			name = iOS;
 			sourceTree = "<group>";
 		};
-		7CEB0B98D85E9929411285B455E95A19 /* Camera */ = {
+		8BE0C2B4E60276653BBA71B2F071F147 /* Support Files */ = {
 			isa = PBXGroup;
 			children = (
-				ED7DFFF77D45330DA3B5C98D64C86F81 /* GGPermissionCameraHandler.h */,
-				B151EB17201C797DD221A30BE89CD75F /* GGPermissionCameraHandler.m */,
-				79CE8E6D5F38654BB736999D2B4E833F /* GGPermissionCameraRequest.h */,
-				DE42AFE605BC96AFF39DB8AE11D3DC00 /* GGPermissionCameraRequest.m */,
+				873F996A4DB476B2B6AD04B813780C6A /* GGPermission.modulemap */,
+				E430AD8658C61E1E5894AA3C05B74C61 /* GGPermission-dummy.m */,
+				C0499814EB228CFEEA2CDE5580F399BC /* GGPermission-Info.plist */,
+				A84D43C0C77DC86C4CB6609F8A8BC32E /* GGPermission-prefix.pch */,
+				CBAE19F28C3BA8A82BB01E3A6D9D4D1D /* GGPermission-umbrella.h */,
+				99C5A4D817F6DF8F6AF7231743B5B894 /* GGPermission.debug.xcconfig */,
+				1D6C855DFA0AA557629FC6EBD753FE7D /* GGPermission.release.xcconfig */,
 			);
-			name = Camera;
+			name = "Support Files";
+			path = "Example/Pods/Target Support Files/GGPermission";
 			sourceTree = "<group>";
 		};
-		925B78595783204E9F789B87CCB649DA /* Bluetooth */ = {
+		933B98D79F18271C6CD326523A65445E /* GGPermission */ = {
 			isa = PBXGroup;
 			children = (
-				06DDC9A847E51BC0BB456157543B6861 /* GGPermissionBluetoothHandler.h */,
-				E280C5AF711B73E0F9D55E80EB4DA19C /* GGPermissionBluetoothHandler.m */,
-				8991280476A729B003D20CC250DDA54C /* GGPermissionBluetoothRequest.h */,
-				2CDCCE5B6CF78AE0A2B11D2F6C6C65D4 /* GGPermissionBluetoothRequest.m */,
+				19EF2E597FD2E84A58836278E223BCD0 /* Calendar */,
+				C46BA79BC318EA1A9C501B5BC9022A34 /* Camera */,
+				5CF861D9F9CE6D9773169B00F241D6F4 /* Contacts */,
+				AAAAAFFFA0CDCEB8C6505D3D40C72159 /* Core */,
+				D016835084AFF9D8658E73851D2A3ECF /* Health */,
+				CD8D0246D4764D3F2E2C4B8B4084827C /* Location */,
+				1B5B0490B255E5C6B4221711463D24FE /* Microphone */,
+				BF5BD0CFA11E1B001D4BFAD9FF22F819 /* Notification */,
+				2ABCE1FE98E715CC5BF289909E1A886C /* Photo */,
+				F72A1D4EF6105380E42DB2B770B3CAF6 /* Pod */,
+				8BE0C2B4E60276653BBA71B2F071F147 /* Support Files */,
 			);
-			name = Bluetooth;
-			sourceTree = "<group>";
-		};
-		94920E8BD69D08A761B6048C4E85554A /* Microphone */ = {
-			isa = PBXGroup;
-			children = (
-				A591A4229601B7AB55C2AEB704769B96 /* GGPermissionMicrophoneHandler.h */,
-				C349675C597D825F5F74AD7FFCA96922 /* GGPermissionMicrophoneHandler.m */,
-				A63F02065F77CC1CE0233D37F2DA77D8 /* GGPermissionMicrophoneRequest.h */,
-				2E39D4F6AA250BC4B4F2BD9E83241C24 /* GGPermissionMicrophoneRequest.m */,
-			);
-			name = Microphone;
+			name = GGPermission;
+			path = ../..;
 			sourceTree = "<group>";
 		};
 		96894F027607A456BAE7D8E5BFBC5AFE /* Pods */ = {
@@ -507,6 +422,31 @@
 			path = "Target Support Files/Pods-GGPermission_Example";
 			sourceTree = "<group>";
 		};
+		AAAAAFFFA0CDCEB8C6505D3D40C72159 /* Core */ = {
+			isa = PBXGroup;
+			children = (
+				080C7188FFE150CA492E11F0CFF1FD86 /* GGPermission.h */,
+				A01C10C4B743CDAC6F5D71EB65F7D2B4 /* GGPermission.m */,
+				2DD197E4BE4C3E109DBDD1662AACEA9F /* GGPermissionBaseHandler.h */,
+				C29DCB6F4CE46356552366112F3E85E7 /* GGPermissionBaseHandler.m */,
+				DD53F7F133C8CD1CF6B46CAE33789935 /* GGPermissionBaseRequest.h */,
+				E44A001EE7A524EC27FAAFF484EA7DA1 /* GGPermissionBaseRequest.m */,
+				589CFF675B3947B56C873FE1D0E9E98E /* GGPermissionDefine.h */,
+				268ABB17FD8914BCAD266D7DB53F9D37 /* GGPermissionLogger.h */,
+				78B1AF1F50D7A95ECD65D807A4E64D65 /* GGPermissionLogger.m */,
+				1B5E89855985C83CEEF48FBE74C58102 /* GGPermissionLoggerMacros.h */,
+				835C30C39BA2DD1551E50E92696EDFD0 /* GGPermissionLoggerMacros.m */,
+				EAC1AB79FE65D420131039268A8E1C96 /* GGPermissionProtocol.h */,
+				F9B2455078C43E35ADCF35AFD458A411 /* GGPermissionTask.h */,
+				FACB0ED91D71ADFC69F61C8EB8FF222D /* GGPermissionTask.m */,
+				62C035E6109E174BA32D6643D5BD999B /* GGPermissionUIHelper.h */,
+				1B380A71ADD901CBB39D6ABAE8DAB93A /* GGPermissionUIHelper.m */,
+				0269AF358C66B23AB5DBD3CD5242AB91 /* UIViewController+GGPermission.h */,
+				75B083F30C426A3282E5EFC1B4DF4F99 /* UIViewController+GGPermission.m */,
+			);
+			name = Core;
+			sourceTree = "<group>";
+		};
 		B866FDA4D0CB1CFF9CC807B09EACDE71 /* GGWindowManager */ = {
 			isa = PBXGroup;
 			children = (
@@ -524,15 +464,37 @@
 			path = GGWindowManager;
 			sourceTree = "<group>";
 		};
-		BB400FD5F7F5B7A311665A896AF66F31 /* Location */ = {
+		BF5BD0CFA11E1B001D4BFAD9FF22F819 /* Notification */ = {
 			isa = PBXGroup;
 			children = (
-				BA6DC7AB835ABB8E379656583ED97451 /* GGPermissionLocationHandler.h */,
-				3F54ED592C1D3D9B657224121560ABCD /* GGPermissionLocationHandler.m */,
-				63E3C53FA50BA370D74B805F8D5F1415 /* GGPermissionLocationHelper.h */,
-				2B7441D8845F22E6C8D11099C225FC23 /* GGPermissionLocationHelper.m */,
-				0420A807BB3A256EBAF79CD4CEFEF064 /* GGPermissionLocationRequest.h */,
-				222AFF8D1F08EB85268B215A6C008F5E /* GGPermissionLocationRequest.m */,
+				4A9D47BCF7520D7B8C92AEF838E9CD7A /* GGPermissionNotificationHandler.h */,
+				D9845BE4B4BFB09E4694BC20337F8F13 /* GGPermissionNotificationHandler.m */,
+				6A4FF3D55B8016D207F0F11EEB7F3CA8 /* GGPermissionNotificationRequest.h */,
+				1716E24593E7294A860E02A1EBC7344F /* GGPermissionNotificationRequest.m */,
+			);
+			name = Notification;
+			sourceTree = "<group>";
+		};
+		C46BA79BC318EA1A9C501B5BC9022A34 /* Camera */ = {
+			isa = PBXGroup;
+			children = (
+				B640A75770108523C9F0BF5397A5967D /* GGPermissionCameraHandler.h */,
+				A61F323C0C275947C6E896FBF5CD7FD9 /* GGPermissionCameraHandler.m */,
+				847AE635A2B0D9A681C4AD5F78407EC2 /* GGPermissionCameraRequest.h */,
+				BCC54FB932EFBB7F8DD222C92C395EFE /* GGPermissionCameraRequest.m */,
+			);
+			name = Camera;
+			sourceTree = "<group>";
+		};
+		CD8D0246D4764D3F2E2C4B8B4084827C /* Location */ = {
+			isa = PBXGroup;
+			children = (
+				69F3CED7779695464C1A1DBE3E6D2A12 /* GGPermissionLocationHandler.h */,
+				82DCD8008A73D61D1BCB98B278271673 /* GGPermissionLocationHandler.m */,
+				3E1FB9D5A83BFD3F5E13C26426A3E5A0 /* GGPermissionLocationHelper.h */,
+				E1C6203A7492C1DABDE347FCA6398042 /* GGPermissionLocationHelper.m */,
+				3EC5ADDA1948359A8250300B9D3C4CA8 /* GGPermissionLocationRequest.h */,
+				1C3BC29EF228FD0ACF56580232BD6987 /* GGPermissionLocationRequest.m */,
 			);
 			name = Location;
 			sourceTree = "<group>";
@@ -541,12 +503,31 @@
 			isa = PBXGroup;
 			children = (
 				9D940727FF8FB9C785EB98E56350EF41 /* Podfile */,
-				202A27375541F2D4F3ABF1F10CBD5F5D /* Development Pods */,
-				2FE445AD883B9ABD3E0241A05A5B79FD /* Frameworks */,
+				D220B36586A084CA4A139FA95F865CED /* Development Pods */,
+				0656CE04288357F0748AB498835BA03E /* Frameworks */,
 				96894F027607A456BAE7D8E5BFBC5AFE /* Pods */,
 				452B6F5E34B50D524F04F6EAED1B71A6 /* Products */,
 				476ABDD388537EF9C5B4ADE6641AF1AF /* Targets Support Files */,
 			);
+			sourceTree = "<group>";
+		};
+		D016835084AFF9D8658E73851D2A3ECF /* Health */ = {
+			isa = PBXGroup;
+			children = (
+				C10808C35B8E38EFE4CF8B3DFC27D728 /* GGPermissionHealthHandler.h */,
+				2F153AF8F3452591E6B900CB7B227691 /* GGPermissionHealthHandler.m */,
+				7DFD6A9B602AEF7D16351376BBD758BC /* GGPermissionHealthRequest.h */,
+				DCA514536BCE4877EB38C6375AF48A0B /* GGPermissionHealthRequest.m */,
+			);
+			name = Health;
+			sourceTree = "<group>";
+		};
+		D220B36586A084CA4A139FA95F865CED /* Development Pods */ = {
+			isa = PBXGroup;
+			children = (
+				933B98D79F18271C6CD326523A65445E /* GGPermission */,
+			);
+			name = "Development Pods";
 			sourceTree = "<group>";
 		};
 		E39C3D3BAC170F9F0BC56BBA82EEBF34 /* Pods-GGPermission_Tests */ = {
@@ -565,19 +546,14 @@
 			path = "Target Support Files/Pods-GGPermission_Tests";
 			sourceTree = "<group>";
 		};
-		F3E766816E9680531585B92D4F09D270 /* Support Files */ = {
+		F72A1D4EF6105380E42DB2B770B3CAF6 /* Pod */ = {
 			isa = PBXGroup;
 			children = (
-				1BA96649B270BB65E97CAF8244E31E70 /* GGPermission.modulemap */,
-				BD0284A801D95DA71D77C9D0CDDC773E /* GGPermission-dummy.m */,
-				835D2A3716EA77663F84EA642F0A720C /* GGPermission-Info.plist */,
-				A183B02F9D71A04BC13B0B576D174AA7 /* GGPermission-prefix.pch */,
-				FE41A209D0659531CC0E043516C0D0B1 /* GGPermission-umbrella.h */,
-				01CDE2F2B9C66C847FDF56C49A24E357 /* GGPermission.debug.xcconfig */,
-				556C9BBA7FC07FE0278C1AC380A13A61 /* GGPermission.release.xcconfig */,
+				38E882331E69D8810D5990A9F0BD56FB /* GGPermission.podspec */,
+				C00A1B58B537B0A1C1FA3A5731E0D934 /* LICENSE */,
+				A60FFB809A5A51B1209DB47AB3D4EB51 /* README.md */,
 			);
-			name = "Support Files";
-			path = "Example/Pods/Target Support Files/GGPermission";
+			name = Pod;
 			sourceTree = "<group>";
 		};
 		FC511502B7C5228E77EBC038EB2EE6AA /* Support Files */ = {
@@ -598,52 +574,15 @@
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
-		52E0B9F75243FCDDF50D63C12AF06F9C /* Headers */ = {
+		A830C6D160470B351533F7DFF5B47B06 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				6932FF813B77D760048B9CA18029140A /* GGWindowDefine.h in Headers */,
-				07FC72E03756DC7975C2A66525D17709 /* GGWindowLogHelper.h in Headers */,
-				BCF9F23CC4FFE60C8BB3033D652EED41 /* GGWindowManager.h in Headers */,
-				E617F58ACE47570CB98577D32AD97FA2 /* GGWindowManager-umbrella.h in Headers */,
-				A9A2EEA4CE4B3B3B556249154B5CEE38 /* UIWindow+GG.h in Headers */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		98ECE83D32FD9D52EFE834E6915DBF30 /* Headers */ = {
-			isa = PBXHeadersBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				125D519CA7A97F56825C6E2CF000D408 /* GGPermission.h in Headers */,
-				5ED5F048BF4D372F1135873FECFCF663 /* GGPermission-umbrella.h in Headers */,
-				F25CD33707135D3176E7FAC66FD293E7 /* GGPermissionBaseHandler.h in Headers */,
-				AD1D383CF35BA0F93334125E0493B04E /* GGPermissionBaseRequest.h in Headers */,
-				2158CF8C7285EC05FB4C905CA48A329B /* GGPermissionBluetoothHandler.h in Headers */,
-				2563D0D75E8CC994EA17962651B8006B /* GGPermissionBluetoothRequest.h in Headers */,
-				CAD98FE690E2B56C84493C23AD558EBB /* GGPermissionCalendarHandler.h in Headers */,
-				5586DDAB54A8794352CA8F306CAF4D70 /* GGPermissionCalendarRequest.h in Headers */,
-				D6383CD964D54CB64C58B268A42FE40D /* GGPermissionCameraHandler.h in Headers */,
-				DC1AE7B4205B8609D9EB52006F210738 /* GGPermissionCameraRequest.h in Headers */,
-				5D6210917ECDE20C7F457B3D66DC5EC8 /* GGPermissionContactsHandler.h in Headers */,
-				FF96063D4FAA79184A8C59FA2191A447 /* GGPermissionContactsRequest.h in Headers */,
-				61C1FAD143B897BA9A27B156E271C60B /* GGPermissionDefine.h in Headers */,
-				3F2FD93EAD12A152F54B23A82A6EB188 /* GGPermissionHealthHandler.h in Headers */,
-				8DDE356557838435D34ECBFFB106DC17 /* GGPermissionHealthRequest.h in Headers */,
-				D13FCB8F2D4EC9224A2C69A318D8C8C3 /* GGPermissionLocationHandler.h in Headers */,
-				9282E0AAF8523391902DF1233480443C /* GGPermissionLocationHelper.h in Headers */,
-				B170323DA38222637E89921B89047933 /* GGPermissionLocationRequest.h in Headers */,
-				B3A76B6BFFF06CA6E62AAB802E73F6E9 /* GGPermissionLogger.h in Headers */,
-				DA6DD6C1520E01D52C6941FBAC38793D /* GGPermissionLoggerMacros.h in Headers */,
-				689CD1948247B1DCAC7863A48E703A17 /* GGPermissionMicrophoneHandler.h in Headers */,
-				B0293ED385DEA3B293E0DAFC2D3A4F02 /* GGPermissionMicrophoneRequest.h in Headers */,
-				12C17869D3F6636B149368D8EB91997E /* GGPermissionNotificationHandler.h in Headers */,
-				BEDC0EA1D65706DE54E53240F54B6084 /* GGPermissionNotificationRequest.h in Headers */,
-				589CC2E0E99F149B7B4EE758DC061A5E /* GGPermissionPhotoHandler.h in Headers */,
-				E538212DDBE36590FAF24E6EF94C5ED1 /* GGPermissionPhotoRequest.h in Headers */,
-				C43152B5B3BF9B52AD309432DACF6DC5 /* GGPermissionProtocol.h in Headers */,
-				EB4AA90833C4D6CC54A1A64FAD7C4C88 /* GGPermissionTask.h in Headers */,
-				EA62138F45AB3CD02098EE865F299E49 /* GGPermissionUIHelper.h in Headers */,
-				71C21FE6DD5ED8EC7E7E2AE4C44455C3 /* UIViewController+GGPermission.h in Headers */,
+				D5AF7EF5EED5944FE6697945F8A296DD /* GGWindowDefine.h in Headers */,
+				29B9F1345F8A0DE7155A6EAF9C8B40D6 /* GGWindowLogHelper.h in Headers */,
+				554ECEC1F59207ACD3D5DA8C312A669C /* GGWindowManager.h in Headers */,
+				881F65B01EFBDF75A46E8FAA8ADA2FF8 /* GGWindowManager-umbrella.h in Headers */,
+				17DE9C68F038D4E789EBA80BD956ECEB /* UIWindow+GG.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -663,17 +602,52 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		C9F87EBBB84AB09D36982559729E224D /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CFBCE62C3A1FCDCFFD850D1E8C93684B /* GGPermission.h in Headers */,
+				D070D346EDA61C8A7F880BDE8C9BC783 /* GGPermission-umbrella.h in Headers */,
+				950DE1955E07EA356EBD2A04E1E8112B /* GGPermissionBaseHandler.h in Headers */,
+				AE45BFF3679DDBB8EB8BB54554D7F47F /* GGPermissionBaseRequest.h in Headers */,
+				2A7B70705021F02C5686F25E5E2FA108 /* GGPermissionCalendarHandler.h in Headers */,
+				6AD7FD829C6B16CEEF07B73A1EFDF49B /* GGPermissionCalendarRequest.h in Headers */,
+				5CBAD20623221455CDC832C33A3E0344 /* GGPermissionCameraHandler.h in Headers */,
+				80AEFE7EF701344BC1D940CCEF600FB0 /* GGPermissionCameraRequest.h in Headers */,
+				19535C9F94A95BFFF7F7B153778A5A17 /* GGPermissionContactsHandler.h in Headers */,
+				83767DE75B8D5B855282C1742047B2E1 /* GGPermissionContactsRequest.h in Headers */,
+				EAB82363F67F1475FF26C9DD7D463804 /* GGPermissionDefine.h in Headers */,
+				B9971EF4E61AF16B3CD9C97083C32CEE /* GGPermissionHealthHandler.h in Headers */,
+				DBD14695A8DF00EC8577B5ED5101C19B /* GGPermissionHealthRequest.h in Headers */,
+				D32EB6249AC987EF4F749D6FA1A34F3B /* GGPermissionLocationHandler.h in Headers */,
+				EAB3CCDB6EDBC05A78E6CF14DD18CFDE /* GGPermissionLocationHelper.h in Headers */,
+				FFE7C29F49027E2986F5CE63C4872376 /* GGPermissionLocationRequest.h in Headers */,
+				E1A7A30DB52B2F01A1681D37CBE5ED0D /* GGPermissionLogger.h in Headers */,
+				4567D05EC8562BCD71DFD19EC95AB3D2 /* GGPermissionLoggerMacros.h in Headers */,
+				193E98D1040C2D9A740912044CAC72FD /* GGPermissionMicrophoneHandler.h in Headers */,
+				A7DE9F86111F236F47945985B6EB5D07 /* GGPermissionMicrophoneRequest.h in Headers */,
+				89146CA8C2255E8C7871FFEAF1B4E5CB /* GGPermissionNotificationHandler.h in Headers */,
+				4991E355F256917689C393C5A39B5CE8 /* GGPermissionNotificationRequest.h in Headers */,
+				BCC662005BB92766322311352E9AC2C0 /* GGPermissionPhotoHandler.h in Headers */,
+				4B75CEA08EFD252962CC177789C6F6E2 /* GGPermissionPhotoRequest.h in Headers */,
+				85135C8F5CBAA63E2A4537C131A6B955 /* GGPermissionProtocol.h in Headers */,
+				FDC68E0EB9A76A8A36B760D935AF2BDE /* GGPermissionTask.h in Headers */,
+				25D1FCE4F7AC65EE3512DC96D61A3CAB /* GGPermissionUIHelper.h in Headers */,
+				392629232EF93F18DCA8CE036F0CBC8D /* UIViewController+GGPermission.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
 		1B7E5D0A227A1231F89942D1156855A7 /* GGWindowManager */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = D12F3598ADD231A307109EEDD99007C6 /* Build configuration list for PBXNativeTarget "GGWindowManager" */;
+			buildConfigurationList = AEA8D7DA5D46CBC6B705326BCB9EBA2F /* Build configuration list for PBXNativeTarget "GGWindowManager" */;
 			buildPhases = (
-				52E0B9F75243FCDDF50D63C12AF06F9C /* Headers */,
-				CD41A953F99A4AEDDBBF19FB6D336131 /* Sources */,
-				DB857BB1DCC3D5C3E7BBCE80AD416078 /* Frameworks */,
-				2ECE8C5B692387FC5A0CC59AA0CE57D7 /* Resources */,
+				A830C6D160470B351533F7DFF5B47B06 /* Headers */,
+				8D72DD0943C4B9D2CD59D7D8B3A697F8 /* Sources */,
+				6BF88B9297061FCD8559EABD75436E0C /* Frameworks */,
+				88FE735ED87ADF07D9BE1BD96ABFBE25 /* Resources */,
 			);
 			buildRules = (
 			);
@@ -696,8 +670,8 @@
 			buildRules = (
 			);
 			dependencies = (
-				D73F8F9DF597356E5D7C4AE8D067F293 /* PBXTargetDependency */,
-				3EB918A5CA02B8D66FFC89EA8BDC0280 /* PBXTargetDependency */,
+				75ED05CA9DE85DE7557348294A7CB865 /* PBXTargetDependency */,
+				9C826CE8F316771E4A95CB93699E6794 /* PBXTargetDependency */,
 			);
 			name = "Pods-GGPermission_Example";
 			productName = Pods_GGPermission_Example;
@@ -716,7 +690,7 @@
 			buildRules = (
 			);
 			dependencies = (
-				F606B386168A16B5B9B21EDD919D9ED1 /* PBXTargetDependency */,
+				5D7027EDEE7CFD73758984DC2F1CE1CA /* PBXTargetDependency */,
 			);
 			name = "Pods-GGPermission_Tests";
 			productName = Pods_GGPermission_Tests;
@@ -725,17 +699,17 @@
 		};
 		E045EB1129C1A338D3DB826871A865EA /* GGPermission */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = BFEC8D5026371BFA5163A76615B1E191 /* Build configuration list for PBXNativeTarget "GGPermission" */;
+			buildConfigurationList = 4DFA2B3FF19D4D0FCAE3BDD6837331F3 /* Build configuration list for PBXNativeTarget "GGPermission" */;
 			buildPhases = (
-				98ECE83D32FD9D52EFE834E6915DBF30 /* Headers */,
-				865D23DE3A81C7238604FF660D92D3A5 /* Sources */,
-				1939026349814857662413BD9D425FFD /* Frameworks */,
-				9ECB770E8CE171E3505E04B68A782B2A /* Resources */,
+				C9F87EBBB84AB09D36982559729E224D /* Headers */,
+				E81E719379C209D3951A6238949BC443 /* Sources */,
+				482F39F0AB65701957B7EAF808D693E7 /* Frameworks */,
+				E9278A4712DACC5E0B1F20D8D5F5460A /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				554164FFC7F24C56C6D8D3E5C94EA0A7 /* PBXTargetDependency */,
+				D1D54440B43942C963CD7C2A1B351AF8 /* PBXTargetDependency */,
 			);
 			name = GGPermission;
 			productName = GGPermission;
@@ -775,14 +749,7 @@
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		2ECE8C5B692387FC5A0CC59AA0CE57D7 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		9ECB770E8CE171E3505E04B68A782B2A /* Resources */ = {
+		88FE735ED87ADF07D9BE1BD96ABFBE25 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -803,6 +770,13 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		E9278A4712DACC5E0B1F20D8D5F5460A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -814,38 +788,15 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		865D23DE3A81C7238604FF660D92D3A5 /* Sources */ = {
+		8D72DD0943C4B9D2CD59D7D8B3A697F8 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				540A063A10244600BEEC60B56E3CB87F /* GGPermission.m in Sources */,
-				14CC3958CCA296A6168CC3AF798CB0CC /* GGPermission-dummy.m in Sources */,
-				B5EE02B7AC063B1563B593651BBAD7F2 /* GGPermissionBaseHandler.m in Sources */,
-				03082462105F5EC4770960B72775845B /* GGPermissionBaseRequest.m in Sources */,
-				7C3DA3F24B5E2EF08EF4D2BCE0D426B5 /* GGPermissionBluetoothHandler.m in Sources */,
-				724E92F9F816B1D7D5570BD1EE85F5DF /* GGPermissionBluetoothRequest.m in Sources */,
-				A40D02EE8B5460CF4008F42A810367B1 /* GGPermissionCalendarHandler.m in Sources */,
-				D49F5DECDB6AABFC844ABBAD250D3865 /* GGPermissionCalendarRequest.m in Sources */,
-				5489D3508AC327D61EB176462D3B325F /* GGPermissionCameraHandler.m in Sources */,
-				1F65C211F0FA3A80B74DF189D7EC22D0 /* GGPermissionCameraRequest.m in Sources */,
-				E17F5FDCF7265C17AAE428A816DBB390 /* GGPermissionContactsHandler.m in Sources */,
-				DCA0F0D53DE994C9689E5C16C8A19A29 /* GGPermissionContactsRequest.m in Sources */,
-				2F75004BDB147F0C89BA1D66E13FBCBD /* GGPermissionHealthHandler.m in Sources */,
-				DAB8720678E158E8052F0814593339BA /* GGPermissionHealthRequest.m in Sources */,
-				8E0ACE467DA99C5AABB8E329C5A38F71 /* GGPermissionLocationHandler.m in Sources */,
-				D2D84B4338BE10BE1F60431E7A4841FE /* GGPermissionLocationHelper.m in Sources */,
-				EAC383370A72048717C920533F9B294A /* GGPermissionLocationRequest.m in Sources */,
-				A26EB928BFF2EDD31EE0746F84E21FBB /* GGPermissionLogger.m in Sources */,
-				0DB721612B83A9C9CF1EF1336D77FEE2 /* GGPermissionLoggerMacros.m in Sources */,
-				C4E945016F13C09794C095288AB0C021 /* GGPermissionMicrophoneHandler.m in Sources */,
-				0C4624C3336A9A9EF41364E9576EED77 /* GGPermissionMicrophoneRequest.m in Sources */,
-				179CD59D1498537D2FC5FAD7E5EE224E /* GGPermissionNotificationHandler.m in Sources */,
-				8ED44ED3CE5231C39C7A1216663AEAC3 /* GGPermissionNotificationRequest.m in Sources */,
-				6A60EA8686B7051D9BEFBBF3D4E10163 /* GGPermissionPhotoHandler.m in Sources */,
-				EAE45EABF828C4D1F5040FD41A2620D7 /* GGPermissionPhotoRequest.m in Sources */,
-				9920B1E4A51853F697CC032E893F4E5C /* GGPermissionTask.m in Sources */,
-				FE753C66229990282CA1456A0A39F626 /* GGPermissionUIHelper.m in Sources */,
-				B193FB8ED4ADBB7E3E596F019840B595 /* UIViewController+GGPermission.m in Sources */,
+				56A734F7DCE4592189C7C4B94C70C8AF /* GGWindowDefine.m in Sources */,
+				8B529F28357318F9EA96A3CBBFB612B3 /* GGWindowLogHelper.m in Sources */,
+				8B8CD720A2F6817FBF897E4FF63B7978 /* GGWindowManager.m in Sources */,
+				A8B3B2857858E33D59EC0C329DD10EB3 /* GGWindowManager-dummy.m in Sources */,
+				8CE745B4ED9BD8E39F21D86F840BFFAE /* UIWindow+GG.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -857,48 +808,215 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		CD41A953F99A4AEDDBBF19FB6D336131 /* Sources */ = {
+		E81E719379C209D3951A6238949BC443 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B62B8EB83C600443AA574DF85CB96A2C /* GGWindowDefine.m in Sources */,
-				E86631A260EC468C888FA6D2B70C98B5 /* GGWindowLogHelper.m in Sources */,
-				897E36CDD00B1D18F2EB2D00812EBBDE /* GGWindowManager.m in Sources */,
-				C733BE6E4790C85657189870FB56A2BD /* GGWindowManager-dummy.m in Sources */,
-				AE0D90CD097C36C964386CEC14E21680 /* UIWindow+GG.m in Sources */,
+				1C5FA245F2FE59CADF18C58B2550DFF4 /* GGPermission.m in Sources */,
+				396032DC18D39C268AC2BA630FB189B6 /* GGPermission-dummy.m in Sources */,
+				70F42EDAD44242778473F1DE4D64D132 /* GGPermissionBaseHandler.m in Sources */,
+				7EA56162DCAA4AEC9A6EE81ABC4AA87A /* GGPermissionBaseRequest.m in Sources */,
+				2A0938440E8A3DB1E48888E2BEC431B6 /* GGPermissionCalendarHandler.m in Sources */,
+				4485EA6AF45844C0FBABC1F48A5B7D7D /* GGPermissionCalendarRequest.m in Sources */,
+				03D123B5025151C282D68F7119B25244 /* GGPermissionCameraHandler.m in Sources */,
+				BE2FC57A827752F6F57853A51FA9B3B4 /* GGPermissionCameraRequest.m in Sources */,
+				087FB90DE7E8EDBE4B8C772B472D8A9C /* GGPermissionContactsHandler.m in Sources */,
+				3AC83A78D15AF5D40AE925CE5875BE8A /* GGPermissionContactsRequest.m in Sources */,
+				25F50F023A8D3AE5C2660F1BD4904378 /* GGPermissionHealthHandler.m in Sources */,
+				35BAEBD927B695CEC5E751B00B395382 /* GGPermissionHealthRequest.m in Sources */,
+				16E483AA30E19391113EAA8FF2F60262 /* GGPermissionLocationHandler.m in Sources */,
+				5CED13D132D303479421A300D2ED76B9 /* GGPermissionLocationHelper.m in Sources */,
+				1014ADD9F5C78D1AC55AC79944C27A0C /* GGPermissionLocationRequest.m in Sources */,
+				5C2DE896ECAE0E11365897300F242905 /* GGPermissionLogger.m in Sources */,
+				4CF252F73F94293DA8902B8235A08E7C /* GGPermissionLoggerMacros.m in Sources */,
+				85BBCA9991256A04F72143C2E1EE847A /* GGPermissionMicrophoneHandler.m in Sources */,
+				B7F467D965F758E41F9378DD30F98583 /* GGPermissionMicrophoneRequest.m in Sources */,
+				D4CE8D79188623DA6B8AA79399C20878 /* GGPermissionNotificationHandler.m in Sources */,
+				3C7002E058200F359EB6B6F68C5B3AC6 /* GGPermissionNotificationRequest.m in Sources */,
+				76D01D6F0A820942297BDB9F5FA5DE3B /* GGPermissionPhotoHandler.m in Sources */,
+				6CFB0A9E4E1BEA14065F7785786B7B1B /* GGPermissionPhotoRequest.m in Sources */,
+				3DE0E4D4E69F17C767D0E4DC259AB2A2 /* GGPermissionTask.m in Sources */,
+				F63DBF1CA507045E88B8E8E28129F8A6 /* GGPermissionUIHelper.m in Sources */,
+				D6626F0A55A02089DB00A8EDAD9F03C5 /* UIViewController+GGPermission.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		3EB918A5CA02B8D66FFC89EA8BDC0280 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = GGWindowManager;
-			target = 1B7E5D0A227A1231F89942D1156855A7 /* GGWindowManager */;
-			targetProxy = 1018857F515557D001E9E94B51C46ABA /* PBXContainerItemProxy */;
-		};
-		554164FFC7F24C56C6D8D3E5C94EA0A7 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = GGWindowManager;
-			target = 1B7E5D0A227A1231F89942D1156855A7 /* GGWindowManager */;
-			targetProxy = DDA3956A0073440B68407D6A495530F8 /* PBXContainerItemProxy */;
-		};
-		D73F8F9DF597356E5D7C4AE8D067F293 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = GGPermission;
-			target = E045EB1129C1A338D3DB826871A865EA /* GGPermission */;
-			targetProxy = DDAA2150C0FB9AD7D715EA198F3F93D2 /* PBXContainerItemProxy */;
-		};
-		F606B386168A16B5B9B21EDD919D9ED1 /* PBXTargetDependency */ = {
+		5D7027EDEE7CFD73758984DC2F1CE1CA /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = "Pods-GGPermission_Example";
 			target = 30D0C96841CA847DEC7B771ABEB7333A /* Pods-GGPermission_Example */;
-			targetProxy = 34AC27AE3E0610C80E085971C3889AAF /* PBXContainerItemProxy */;
+			targetProxy = BEE55C01DC4FFF8251B34EBEDDF10C10 /* PBXContainerItemProxy */;
+		};
+		75ED05CA9DE85DE7557348294A7CB865 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = GGPermission;
+			target = E045EB1129C1A338D3DB826871A865EA /* GGPermission */;
+			targetProxy = 93F1F7A7F77EADA8ABD2DA1BA088625C /* PBXContainerItemProxy */;
+		};
+		9C826CE8F316771E4A95CB93699E6794 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = GGWindowManager;
+			target = 1B7E5D0A227A1231F89942D1156855A7 /* GGWindowManager */;
+			targetProxy = 2DF7C16CA02BF6A909C75CFA30AD54FC /* PBXContainerItemProxy */;
+		};
+		D1D54440B43942C963CD7C2A1B351AF8 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = GGWindowManager;
+			target = 1B7E5D0A227A1231F89942D1156855A7 /* GGWindowManager */;
+			targetProxy = 9AE3CB5F6C31BAC22D890E8A81CC568B /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
+		1083CA23BE9631EA88E6A5A2B2352053 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1D6C855DFA0AA557629FC6EBD753FE7D /* GGPermission.release.xcconfig */;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_MODULE_VERIFIER = NO;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
+				GCC_PREFIX_HEADER = "Target Support Files/GGPermission/GGPermission-prefix.pch";
+				GENERATE_INFOPLIST_FILE = NO;
+				INFOPLIST_FILE = "Target Support Files/GGPermission/GGPermission-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/GGPermission/GGPermission.modulemap";
+				PRODUCT_MODULE_NAME = GGPermission;
+				PRODUCT_NAME = GGPermission;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_INSTALL_OBJC_HEADER = YES;
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		12446361BF8DF2230556E066AB4BDEB7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 99C5A4D817F6DF8F6AF7231743B5B894 /* GGPermission.debug.xcconfig */;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_MODULE_VERIFIER = NO;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
+				GCC_PREFIX_HEADER = "Target Support Files/GGPermission/GGPermission-prefix.pch";
+				GENERATE_INFOPLIST_FILE = NO;
+				INFOPLIST_FILE = "Target Support Files/GGPermission/GGPermission-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/GGPermission/GGPermission.modulemap";
+				PRODUCT_MODULE_NAME = GGPermission;
+				PRODUCT_NAME = GGPermission;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_INSTALL_OBJC_HEADER = YES;
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		2360E174F27BC6B939B3683A1CF2908A /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = C1EB432D15FEB0C9927FFD162EE4DC4D /* GGWindowManager.release.xcconfig */;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_MODULE_VERIFIER = NO;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
+				GCC_PREFIX_HEADER = "Target Support Files/GGWindowManager/GGWindowManager-prefix.pch";
+				GENERATE_INFOPLIST_FILE = NO;
+				INFOPLIST_FILE = "Target Support Files/GGWindowManager/GGWindowManager-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/GGWindowManager/GGWindowManager.modulemap";
+				PRODUCT_MODULE_NAME = GGWindowManager;
+				PRODUCT_NAME = GGWindowManager;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_INSTALL_OBJC_HEADER = YES;
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		24F379958287F110178AB5B6CA5FF08B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 314343621C3AB0429038673214693902 /* GGWindowManager.debug.xcconfig */;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_MODULE_VERIFIER = NO;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
+				GCC_PREFIX_HEADER = "Target Support Files/GGWindowManager/GGWindowManager-prefix.pch";
+				GENERATE_INFOPLIST_FILE = NO;
+				INFOPLIST_FILE = "Target Support Files/GGWindowManager/GGWindowManager-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/GGWindowManager/GGWindowManager.modulemap";
+				PRODUCT_MODULE_NAME = GGWindowManager;
+				PRODUCT_NAME = GGWindowManager;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_INSTALL_OBJC_HEADER = YES;
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
 		353B0C512C41287F380502852AA53D40 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = DBF59DFF4A2CD326AA97C38D3225063F /* Pods-GGPermission_Example.debug.xcconfig */;
@@ -929,42 +1047,6 @@
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Debug;
-		};
-		575EF9F1ED3B7472FD81CC591B84DEE5 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 314343621C3AB0429038673214693902 /* GGWindowManager.debug.xcconfig */;
-			buildSettings = {
-				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
-				CLANG_ENABLE_OBJC_WEAK = NO;
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				ENABLE_MODULE_VERIFIER = NO;
-				ENABLE_USER_SCRIPT_SANDBOXING = NO;
-				GCC_PREFIX_HEADER = "Target Support Files/GGWindowManager/GGWindowManager-prefix.pch";
-				GENERATE_INFOPLIST_FILE = NO;
-				INFOPLIST_FILE = "Target Support Files/GGWindowManager/GGWindowManager-Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/GGWindowManager/GGWindowManager.modulemap";
-				PRODUCT_MODULE_NAME = GGWindowManager;
-				PRODUCT_NAME = GGWindowManager;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
-				SWIFT_INSTALL_OBJC_HEADER = YES;
-				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
@@ -1006,80 +1088,6 @@
 				VERSION_INFO_PREFIX = "";
 			};
 			name = Debug;
-		};
-		7BFD7FED192D5772275E0D7D075F5482 /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = C1EB432D15FEB0C9927FFD162EE4DC4D /* GGWindowManager.release.xcconfig */;
-			buildSettings = {
-				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
-				CLANG_ENABLE_OBJC_WEAK = NO;
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				ENABLE_MODULE_VERIFIER = NO;
-				ENABLE_USER_SCRIPT_SANDBOXING = NO;
-				GCC_PREFIX_HEADER = "Target Support Files/GGWindowManager/GGWindowManager-prefix.pch";
-				GENERATE_INFOPLIST_FILE = NO;
-				INFOPLIST_FILE = "Target Support Files/GGWindowManager/GGWindowManager-Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/GGWindowManager/GGWindowManager.modulemap";
-				PRODUCT_MODULE_NAME = GGWindowManager;
-				PRODUCT_NAME = GGWindowManager;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
-				SWIFT_INSTALL_OBJC_HEADER = YES;
-				SWIFT_VERSION = 4.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VALIDATE_PRODUCT = YES;
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Release;
-		};
-		7CB36F934E33D54D4CB16C5F72613D8E /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 556C9BBA7FC07FE0278C1AC380A13A61 /* GGPermission.release.xcconfig */;
-			buildSettings = {
-				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
-				CLANG_ENABLE_OBJC_WEAK = NO;
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				ENABLE_MODULE_VERIFIER = NO;
-				ENABLE_USER_SCRIPT_SANDBOXING = NO;
-				GCC_PREFIX_HEADER = "Target Support Files/GGPermission/GGPermission-prefix.pch";
-				GENERATE_INFOPLIST_FILE = NO;
-				INFOPLIST_FILE = "Target Support Files/GGPermission/GGPermission-Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/GGPermission/GGPermission.modulemap";
-				PRODUCT_MODULE_NAME = GGPermission;
-				PRODUCT_NAME = GGPermission;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
-				SWIFT_INSTALL_OBJC_HEADER = YES;
-				SWIFT_VERSION = 4.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VALIDATE_PRODUCT = YES;
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Release;
 		};
 		8DE5143C03248BB6CD542DE3963D6F3A /* Debug */ = {
 			isa = XCBuildConfiguration;
@@ -1144,42 +1152,6 @@
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				SYMROOT = "${SRCROOT}/../build";
-			};
-			name = Debug;
-		};
-		8FD42897C15E6AD44527FA84C451278D /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 01CDE2F2B9C66C847FDF56C49A24E357 /* GGPermission.debug.xcconfig */;
-			buildSettings = {
-				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
-				CLANG_ENABLE_OBJC_WEAK = NO;
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				ENABLE_MODULE_VERIFIER = NO;
-				ENABLE_USER_SCRIPT_SANDBOXING = NO;
-				GCC_PREFIX_HEADER = "Target Support Files/GGPermission/GGPermission-prefix.pch";
-				GENERATE_INFOPLIST_FILE = NO;
-				INFOPLIST_FILE = "Target Support Files/GGPermission/GGPermission-Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/GGPermission/GGPermission.modulemap";
-				PRODUCT_MODULE_NAME = GGPermission;
-				PRODUCT_NAME = GGPermission;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
-				SWIFT_INSTALL_OBJC_HEADER = YES;
-				SWIFT_VERSION = 4.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
 			};
 			name = Debug;
 		};
@@ -1331,6 +1303,15 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
+		4DFA2B3FF19D4D0FCAE3BDD6837331F3 /* Build configuration list for PBXNativeTarget "GGPermission" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				12446361BF8DF2230556E066AB4BDEB7 /* Debug */,
+				1083CA23BE9631EA88E6A5A2B2352053 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		874EA24C550486EE73C0CDED9ED55755 /* Build configuration list for PBXNativeTarget "Pods-GGPermission_Example" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
@@ -1349,20 +1330,11 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		BFEC8D5026371BFA5163A76615B1E191 /* Build configuration list for PBXNativeTarget "GGPermission" */ = {
+		AEA8D7DA5D46CBC6B705326BCB9EBA2F /* Build configuration list for PBXNativeTarget "GGWindowManager" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				8FD42897C15E6AD44527FA84C451278D /* Debug */,
-				7CB36F934E33D54D4CB16C5F72613D8E /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		D12F3598ADD231A307109EEDD99007C6 /* Build configuration list for PBXNativeTarget "GGWindowManager" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				575EF9F1ED3B7472FD81CC591B84DEE5 /* Debug */,
-				7BFD7FED192D5772275E0D7D075F5482 /* Release */,
+				24F379958287F110178AB5B6CA5FF08B /* Debug */,
+				2360E174F27BC6B939B3683A1CF2908A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

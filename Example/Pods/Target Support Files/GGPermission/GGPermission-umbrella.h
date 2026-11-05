@@ -10,8 +10,6 @@
 #endif
 #endif
 
-#import "GGPermissionBluetoothHandler.h"
-#import "GGPermissionBluetoothRequest.h"
 #import "GGPermissionCalendarHandler.h"
 #import "GGPermissionCalendarRequest.h"
 #import "GGPermissionCameraHandler.h"
